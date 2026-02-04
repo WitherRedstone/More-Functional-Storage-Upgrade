@@ -1,0 +1,27 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "A": {
+      "item": "more_functionalstorage_upgrade:turtle_scute_upgrade"
+    },
+    "B": {
+      "item": "minecraft:chest"
+    },
+    "C": {
+      "item": "minecraft:nether_star"
+    },
+    "D": {
+      "item": "minecraft:diamond_block"
+    }
+  },
+  "pattern": [
+    "CDC",
+    "BAB",
+    "CDC"
+  ],
+  "result": {
+    "count": 1,
+    "id": "more_functionalstorage_upgrade:nether_star_upgrade"
+  }
+}

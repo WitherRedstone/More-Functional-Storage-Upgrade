@@ -1,0 +1,6 @@
+{ 
+  "parent": "item/generated", 
+  "textures": { 
+    "layer0": "more_functionalstorage_upgrade:item/water_generator_upgrade_1" 
+  } 
+} 
