@@ -2,6 +2,7 @@ package com.chinaex123.more_functionalstorage_upgrade.register;
 
 import com.chinaex123.more_functionalstorage_upgrade.MoreFunctionalStorageUpgrade;
 import com.chinaex123.more_functionalstorage_upgrade.register.Item.CustomUpgradeItem;
+import com.chinaex123.more_functionalstorage_upgrade.register.Item.ModItems;
 import com.chinaex123.more_functionalstorage_upgrade.register.ModCompat.CreateCompat;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.network.chat.Component;
@@ -23,6 +24,8 @@ public class ModCreativeTabs {
                     .title(Component.translatable("itemGroup.more_functionalstorage_upgrade_tab"))
                     .displayItems((parameters, output) -> {
 
+                        output.accept(ModItems.GENERATOR_UPGRADE_SMITHING_TEMPLATE.get()); // 升级锻造模板
+
                         // ==================== 物品堆叠升级 ====================
                         output.accept(CustomUpgradeItem.TURTLE_SCUTE_UPGRADE.get()); // 鳞甲升级
                         output.accept(CustomUpgradeItem.NETHER_STAR_UPGRADE.get()); // 下界之星升级
@@ -34,56 +37,67 @@ public class ModCreativeTabs {
                         output.accept(CustomUpgradeItem.OBSIDIAN_GENERATOR_UPGRADE_2.get());
                         output.accept(CustomUpgradeItem.OBSIDIAN_GENERATOR_UPGRADE_3.get());
                         output.accept(CustomUpgradeItem.OBSIDIAN_GENERATOR_UPGRADE_4.get());
+                        output.accept(CustomUpgradeItem.OBSIDIAN_GENERATOR_UPGRADE_5.get());
                         // 圆石生成升级
                         output.accept(CustomUpgradeItem.COBBLESTONE_GENERATOR_UPGRADE_1.get());
                         output.accept(CustomUpgradeItem.COBBLESTONE_GENERATOR_UPGRADE_2.get());
                         output.accept(CustomUpgradeItem.COBBLESTONE_GENERATOR_UPGRADE_3.get());
                         output.accept(CustomUpgradeItem.COBBLESTONE_GENERATOR_UPGRADE_4.get());
+                        output.accept(CustomUpgradeItem.COBBLESTONE_GENERATOR_UPGRADE_5.get());
                         // 泥土生成升级
                         output.accept(CustomUpgradeItem.DIRT_GENERATOR_UPGRADE_1.get());
                         output.accept(CustomUpgradeItem.DIRT_GENERATOR_UPGRADE_2.get());
                         output.accept(CustomUpgradeItem.DIRT_GENERATOR_UPGRADE_3.get());
                         output.accept(CustomUpgradeItem.DIRT_GENERATOR_UPGRADE_4.get());
+                        output.accept(CustomUpgradeItem.DIRT_GENERATOR_UPGRADE_5.get());
                         // 沙子生成升级
                         output.accept(CustomUpgradeItem.SAND_GENERATOR_UPGRADE_1.get());
                         output.accept(CustomUpgradeItem.SAND_GENERATOR_UPGRADE_2.get());
                         output.accept(CustomUpgradeItem.SAND_GENERATOR_UPGRADE_3.get());
                         output.accept(CustomUpgradeItem.SAND_GENERATOR_UPGRADE_4.get());
+                        output.accept(CustomUpgradeItem.SAND_GENERATOR_UPGRADE_5.get());
                         // 安山岩生成升级
                         output.accept(CustomUpgradeItem.ANDESITE_GENERATOR_UPGRADE_1.get());
                         output.accept(CustomUpgradeItem.ANDESITE_GENERATOR_UPGRADE_2.get());
                         output.accept(CustomUpgradeItem.ANDESITE_GENERATOR_UPGRADE_3.get());
                         output.accept(CustomUpgradeItem.ANDESITE_GENERATOR_UPGRADE_4.get());
+                        output.accept(CustomUpgradeItem.ANDESITE_GENERATOR_UPGRADE_5.get());
                         // 闪长岩生成升级
                         output.accept(CustomUpgradeItem.DIORITE_GENERATOR_UPGRADE_1.get());
                         output.accept(CustomUpgradeItem.DIORITE_GENERATOR_UPGRADE_2.get());
                         output.accept(CustomUpgradeItem.DIORITE_GENERATOR_UPGRADE_3.get());
                         output.accept(CustomUpgradeItem.DIORITE_GENERATOR_UPGRADE_4.get());
+                        output.accept(CustomUpgradeItem.DIORITE_GENERATOR_UPGRADE_5.get());
                         // 花岗岩生成升级
                         output.accept(CustomUpgradeItem.GRANITE_GENERATOR_UPGRADE_1.get());
                         output.accept(CustomUpgradeItem.GRANITE_GENERATOR_UPGRADE_2.get());
                         output.accept(CustomUpgradeItem.GRANITE_GENERATOR_UPGRADE_3.get());
                         output.accept(CustomUpgradeItem.GRANITE_GENERATOR_UPGRADE_4.get());
+                        output.accept(CustomUpgradeItem.GRANITE_GENERATOR_UPGRADE_5.get());
                         // 深板岩圆石生成升级
                         output.accept(CustomUpgradeItem.COBBLED_DEEPSLATE_GENERATOR_UPGRADE_1.get());
                         output.accept(CustomUpgradeItem.COBBLED_DEEPSLATE_GENERATOR_UPGRADE_2.get());
                         output.accept(CustomUpgradeItem.COBBLED_DEEPSLATE_GENERATOR_UPGRADE_3.get());
                         output.accept(CustomUpgradeItem.COBBLED_DEEPSLATE_GENERATOR_UPGRADE_4.get());
+                        output.accept(CustomUpgradeItem.COBBLED_DEEPSLATE_GENERATOR_UPGRADE_5.get());
                         // 黑石生成升级
                         output.accept(CustomUpgradeItem.BLACKSTONE_GENERATOR_UPGRADE_1.get());
                         output.accept(CustomUpgradeItem.BLACKSTONE_GENERATOR_UPGRADE_2.get());
                         output.accept(CustomUpgradeItem.BLACKSTONE_GENERATOR_UPGRADE_3.get());
                         output.accept(CustomUpgradeItem.BLACKSTONE_GENERATOR_UPGRADE_4.get());
+                        output.accept(CustomUpgradeItem.BLACKSTONE_GENERATOR_UPGRADE_5.get());
                         // 下界岩生成升级
                         output.accept(CustomUpgradeItem.NETHERRACK_GENERATOR_UPGRADE_1.get());
                         output.accept(CustomUpgradeItem.NETHERRACK_GENERATOR_UPGRADE_2.get());
                         output.accept(CustomUpgradeItem.NETHERRACK_GENERATOR_UPGRADE_3.get());
                         output.accept(CustomUpgradeItem.NETHERRACK_GENERATOR_UPGRADE_4.get());
+                        output.accept(CustomUpgradeItem.NETHERRACK_GENERATOR_UPGRADE_5.get());
                         // 末地石生成升级
                         output.accept(CustomUpgradeItem.END_STONE_GENERATOR_UPGRADE_1.get());
                         output.accept(CustomUpgradeItem.END_STONE_GENERATOR_UPGRADE_2.get());
                         output.accept(CustomUpgradeItem.END_STONE_GENERATOR_UPGRADE_3.get());
                         output.accept(CustomUpgradeItem.END_STONE_GENERATOR_UPGRADE_4.get());
+                        output.accept(CustomUpgradeItem.END_STONE_GENERATOR_UPGRADE_5.get());
 
 
 
@@ -93,24 +107,55 @@ public class ModCreativeTabs {
                         output.accept(CustomUpgradeItem.WATER_GENERATOR_UPGRADE_2.get());
                         output.accept(CustomUpgradeItem.WATER_GENERATOR_UPGRADE_3.get());
                         output.accept(CustomUpgradeItem.WATER_GENERATOR_UPGRADE_4.get());
+                        output.accept(CustomUpgradeItem.WATER_GENERATOR_UPGRADE_5.get());
                         // 滴水生成升级
                         output.accept(CustomUpgradeItem.LAVA_GENERATOR_UPGRADE_1.get());
                         output.accept(CustomUpgradeItem.LAVA_GENERATOR_UPGRADE_2.get());
                         output.accept(CustomUpgradeItem.LAVA_GENERATOR_UPGRADE_3.get());
                         output.accept(CustomUpgradeItem.LAVA_GENERATOR_UPGRADE_4.get());
+                        output.accept(CustomUpgradeItem.LAVA_GENERATOR_UPGRADE_5.get());
                         // 牛奶生成升级
                         output.accept(CustomUpgradeItem.MILK_GENERATOR_UPGRADE_1.get());
                         output.accept(CustomUpgradeItem.MILK_GENERATOR_UPGRADE_2.get());
                         output.accept(CustomUpgradeItem.MILK_GENERATOR_UPGRADE_3.get());
                         output.accept(CustomUpgradeItem.MILK_GENERATOR_UPGRADE_4.get());
+                        output.accept(CustomUpgradeItem.MILK_GENERATOR_UPGRADE_5.get());
 
-                        // 加载 机械动力 时注册
+
+
+                        // ==================== 兼容性升级 ====================
+                        // 加载 机械动力 时添加
                         if (ModList.get().isLoaded("create")) {
+                            // 锆蓝石生成升级
+                            output.accept(CreateCompat.ASURINE_GENERATOR_UPGRADE_1.get());
+                            output.accept(CreateCompat.ASURINE_GENERATOR_UPGRADE_2.get());
+                            output.accept(CreateCompat.ASURINE_GENERATOR_UPGRADE_3.get());
+                            output.accept(CreateCompat.ASURINE_GENERATOR_UPGRADE_4.get());
+                            output.accept(CreateCompat.ASURINE_GENERATOR_UPGRADE_5.get());
+                            // 绯红岩生成升级
+                            output.accept(CreateCompat.CRIMSITE_GENERATOR_UPGRADE_1.get());
+                            output.accept(CreateCompat.CRIMSITE_GENERATOR_UPGRADE_2.get());
+                            output.accept(CreateCompat.CRIMSITE_GENERATOR_UPGRADE_3.get());
+                            output.accept(CreateCompat.CRIMSITE_GENERATOR_UPGRADE_4.get());
+                            output.accept(CreateCompat.CRIMSITE_GENERATOR_UPGRADE_5.get());
+                            // 赭金砂生成升级
+                            output.accept(CreateCompat.OCHRUM_GENERATOR_UPGRADE_1.get());
+                            output.accept(CreateCompat.OCHRUM_GENERATOR_UPGRADE_2.get());
+                            output.accept(CreateCompat.OCHRUM_GENERATOR_UPGRADE_3.get());
+                            output.accept(CreateCompat.OCHRUM_GENERATOR_UPGRADE_4.get());
+                            output.accept(CreateCompat.OCHRUM_GENERATOR_UPGRADE_5.get());
+                            // 辉绿岩生成升级
+                            output.accept(CreateCompat.VERIDIUM_GENERATOR_UPGRADE_1.get());
+                            output.accept(CreateCompat.VERIDIUM_GENERATOR_UPGRADE_2.get());
+                            output.accept(CreateCompat.VERIDIUM_GENERATOR_UPGRADE_3.get());
+                            output.accept(CreateCompat.VERIDIUM_GENERATOR_UPGRADE_4.get());
+                            output.accept(CreateCompat.VERIDIUM_GENERATOR_UPGRADE_5.get());
                             // 蜂蜜生成升级
                             output.accept(CreateCompat.HONEY_GENERATOR_UPGRADE_1.get());
                             output.accept(CreateCompat.HONEY_GENERATOR_UPGRADE_2.get());
                             output.accept(CreateCompat.HONEY_GENERATOR_UPGRADE_3.get());
                             output.accept(CreateCompat.HONEY_GENERATOR_UPGRADE_4.get());
+                            output.accept(CreateCompat.HONEY_GENERATOR_UPGRADE_5.get());
                         }
 
                     })

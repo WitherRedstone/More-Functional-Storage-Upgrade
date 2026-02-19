@@ -6,13 +6,13 @@
       "item": "functionalstorage:netherite_upgrade"
     },
     "B": {
-      "item": "minecraft:chest"
+      "tag": "c:chests"
     },
     "C": {
       "item": "minecraft:turtle_scute"
     },
     "D": {
-      "item": "minecraft:diamond_block"
+      "tag": "c:storage_blocks/diamond"
     }
   },
   "pattern": [

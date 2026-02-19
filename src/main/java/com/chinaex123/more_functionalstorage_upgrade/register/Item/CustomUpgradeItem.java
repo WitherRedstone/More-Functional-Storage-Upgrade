@@ -93,6 +93,11 @@ public class CustomUpgradeItem {
             ITEMS.register("obsidian_generator_upgrade_4", () ->
                     createItemGenerator(new ItemStack(Items.OBSIDIAN, 64), 64, 5)
             );
+    // 黑曜石生成升级T5 - 64个黑曜石/tick
+    public static final DeferredItem<Item> OBSIDIAN_GENERATOR_UPGRADE_5 =
+            ITEMS.register("obsidian_generator_upgrade_5", () ->
+                    createItemGenerator(new ItemStack(Items.OBSIDIAN, 64), 64, 1)
+            );
 
     // 圆石生成升级T1 - 8个圆石/20tick
     public static final DeferredItem<Item> COBBLESTONE_GENERATOR_UPGRADE_1 =
@@ -113,6 +118,11 @@ public class CustomUpgradeItem {
     public static final DeferredItem<Item> COBBLESTONE_GENERATOR_UPGRADE_4 =
             ITEMS.register("cobblestone_generator_upgrade_4", () ->
                     createItemGenerator(new ItemStack(Items.COBBLESTONE, 64), 64, 5)
+            );
+    // 圆石生成升级T5 - 64个圆石/tick
+    public static final DeferredItem<Item> COBBLESTONE_GENERATOR_UPGRADE_5 =
+            ITEMS.register("cobblestone_generator_upgrade_5", () ->
+                    createItemGenerator(new ItemStack(Items.COBBLESTONE, 64), 64, 1)
             );
 
     // 泥土生成升级T1 - 8个泥土/20tick
@@ -135,6 +145,11 @@ public class CustomUpgradeItem {
             ITEMS.register("dirt_generator_upgrade_4", () ->
                     createItemGenerator(new ItemStack(Items.DIRT, 64), 64, 5)
             );
+    // 泥土生成升级T4 - 64个泥土/tick
+    public static final DeferredItem<Item> DIRT_GENERATOR_UPGRADE_5 =
+            ITEMS.register("dirt_generator_upgrade_5", () ->
+                    createItemGenerator(new ItemStack(Items.DIRT, 64), 64, 1)
+            );
 
     // 沙子生成升级T1 - 8个沙子/20tick
     public static final DeferredItem<Item> SAND_GENERATOR_UPGRADE_1 =
@@ -155,6 +170,11 @@ public class CustomUpgradeItem {
     public static final DeferredItem<Item> SAND_GENERATOR_UPGRADE_4 =
             ITEMS.register("sand_generator_upgrade_4", () ->
                     createItemGenerator(new ItemStack(Items.SAND, 64), 64, 5)
+            );
+    // 沙子生成升级T5 - 64个沙子/tick
+    public static final DeferredItem<Item> SAND_GENERATOR_UPGRADE_5 =
+            ITEMS.register("sand_generator_upgrade_5", () ->
+                    createItemGenerator(new ItemStack(Items.SAND, 64), 64, 1)
             );
 
     // 安山岩生成升级T1 - 8个安山岩/20tick
@@ -177,6 +197,11 @@ public class CustomUpgradeItem {
             ITEMS.register("andesite_generator_upgrade_4", () ->
                     createItemGenerator(new ItemStack(Items.ANDESITE, 64), 64, 5)
             );
+    // 安山岩生成升级T4 - 64个安山岩/tick
+    public static final DeferredItem<Item> ANDESITE_GENERATOR_UPGRADE_5 =
+            ITEMS.register("andesite_generator_upgrade_5", () ->
+                    createItemGenerator(new ItemStack(Items.ANDESITE, 64), 64, 1)
+            );
 
     // 闪长岩生成升级T1 - 8个闪长岩/20tick
     public static final DeferredItem<Item> DIORITE_GENERATOR_UPGRADE_1 =
@@ -197,6 +222,11 @@ public class CustomUpgradeItem {
     public static final DeferredItem<Item> DIORITE_GENERATOR_UPGRADE_4 =
             ITEMS.register("diorite_generator_upgrade_4", () ->
                     createItemGenerator(new ItemStack(Items.DIORITE, 64), 64, 5)
+            );
+    // 闪长岩生成升级T4 - 64个闪长岩/tick
+    public static final DeferredItem<Item> DIORITE_GENERATOR_UPGRADE_5 =
+            ITEMS.register("diorite_generator_upgrade_5", () ->
+                    createItemGenerator(new ItemStack(Items.DIORITE, 64), 64, 1)
             );
 
     // 花岗岩生成升级T1 - 8个花岗岩/20tick
@@ -219,6 +249,11 @@ public class CustomUpgradeItem {
             ITEMS.register("granite_generator_upgrade_4", () ->
                     createItemGenerator(new ItemStack(Items.GRANITE, 64), 64, 5)
             );
+    // 花岗岩生成升级T4 - 64个花岗岩/tick
+    public static final DeferredItem<Item> GRANITE_GENERATOR_UPGRADE_5 =
+            ITEMS.register("granite_generator_upgrade_5", () ->
+                    createItemGenerator(new ItemStack(Items.GRANITE, 64), 64, 1)
+            );
 
     // 深板岩圆石生成升级T1 - 8个深板岩圆石/20tick
     public static final DeferredItem<Item> COBBLED_DEEPSLATE_GENERATOR_UPGRADE_1 =
@@ -239,6 +274,11 @@ public class CustomUpgradeItem {
     public static final DeferredItem<Item> COBBLED_DEEPSLATE_GENERATOR_UPGRADE_4 =
             ITEMS.register("cobbled_deepslate_generator_upgrade_4", () ->
                     createItemGenerator(new ItemStack(Items.COBBLED_DEEPSLATE, 64), 64, 5)
+            );
+    // 深板岩圆石生成升级T4 - 64个深板岩圆石/tick
+    public static final DeferredItem<Item> COBBLED_DEEPSLATE_GENERATOR_UPGRADE_5 =
+            ITEMS.register("cobbled_deepslate_generator_upgrade_5", () ->
+                    createItemGenerator(new ItemStack(Items.COBBLED_DEEPSLATE, 64), 64, 1)
             );
 
     // 黑石生成升级T1 - 8个黑石/20tick
@@ -261,6 +301,11 @@ public class CustomUpgradeItem {
             ITEMS.register("blackstone_generator_upgrade_4", () ->
                     createItemGenerator(new ItemStack(Items.BLACKSTONE, 64), 64, 5)
             );
+    // 黑石生成升级T4 - 64个黑石/tick
+    public static final DeferredItem<Item> BLACKSTONE_GENERATOR_UPGRADE_5 =
+            ITEMS.register("blackstone_generator_upgrade_5", () ->
+                    createItemGenerator(new ItemStack(Items.BLACKSTONE, 64), 64, 1)
+            );
 
     // 下界岩生成升级T1 - 8个下界岩/20tick
     public static final DeferredItem<Item> NETHERRACK_GENERATOR_UPGRADE_1 =
@@ -282,6 +327,11 @@ public class CustomUpgradeItem {
             ITEMS.register("netherrack_generator_upgrade_4", () ->
                     createItemGenerator(new ItemStack(Items.NETHERRACK, 64), 64, 5)
             );
+    // 下界岩生成升级T4 - 64个下界岩/tick
+    public static final DeferredItem<Item> NETHERRACK_GENERATOR_UPGRADE_5 =
+            ITEMS.register("netherrack_generator_upgrade_5", () ->
+                    createItemGenerator(new ItemStack(Items.NETHERRACK, 64), 64, 1)
+            );
 
     // 末地石生成升级T1 - 8个末地石/20tick
     public static final DeferredItem<Item> END_STONE_GENERATOR_UPGRADE_1 =
@@ -302,6 +352,11 @@ public class CustomUpgradeItem {
     public static final DeferredItem<Item> END_STONE_GENERATOR_UPGRADE_4 =
             ITEMS.register("end_stone_generator_upgrade_4", () ->
                     createItemGenerator(new ItemStack(Items.END_STONE, 64), 64, 5)
+            );
+    // 末地石生成升级T4 - 64个末地石/tick
+    public static final DeferredItem<Item> END_STONE_GENERATOR_UPGRADE_5 =
+            ITEMS.register("end_stone_generator_upgrade_5", () ->
+                    createItemGenerator(new ItemStack(Items.END_STONE, 64), 64, 1)
             );
 
 
@@ -326,6 +381,11 @@ public class CustomUpgradeItem {
             ITEMS.register("water_generator_upgrade_4", () ->
                     createFluidGenerator(new FluidStack(Fluids.WATER, 1024000), 1024000, 5)
             );
+    // 水生成升级T4 - 2048000mB/tick
+    public static final DeferredItem<Item> WATER_GENERATOR_UPGRADE_5 =
+            ITEMS.register("water_generator_upgrade_5", () ->
+                    createFluidGenerator(new FluidStack(Fluids.WATER, 2048000), 2048000, 1)
+            );
 
     // 滴水生成升级T1 - 50mB/20tick
     public static final DeferredItem<Item> LAVA_GENERATOR_UPGRADE_1 =
@@ -342,10 +402,15 @@ public class CustomUpgradeItem {
             ITEMS.register("lava_generator_upgrade_3", () ->
                     createFluidGenerator(new FluidStack(Fluids.LAVA, 1000), 1000, 10)
             );
-    // 滴水生成升级T4 - 2500mB/2tick
+    // 滴水生成升级T4 - 2500mB/5tick
     public static final DeferredItem<Item> LAVA_GENERATOR_UPGRADE_4 =
             ITEMS.register("lava_generator_upgrade_4", () ->
                     createFluidGenerator(new FluidStack(Fluids.LAVA, 2500), 2500, 5)
+            );
+    // 滴水生成升级T4 - 5000mB/tick
+    public static final DeferredItem<Item> LAVA_GENERATOR_UPGRADE_5 =
+            ITEMS.register("lava_generator_upgrade_5", () ->
+                    createFluidGenerator(new FluidStack(Fluids.LAVA, 5000), 5000, 1)
             );
 
     // 牛奶生成升级T1 - 50mB/20tick
@@ -367,6 +432,11 @@ public class CustomUpgradeItem {
     public static final DeferredItem<Item> MILK_GENERATOR_UPGRADE_4 =
             ITEMS.register("milk_generator_upgrade_4", () ->
                     createFluidGenerator(getFluid("minecraft:milk", 2500), 2500, 5)
+            );
+    // 牛奶生成升级T4 - 5000mB/tick
+    public static final DeferredItem<Item> MILK_GENERATOR_UPGRADE_5 =
+            ITEMS.register("milk_generator_upgrade_5", () ->
+                    createFluidGenerator(getFluid("minecraft:milk", 5000), 5000, 1)
             );
 
 

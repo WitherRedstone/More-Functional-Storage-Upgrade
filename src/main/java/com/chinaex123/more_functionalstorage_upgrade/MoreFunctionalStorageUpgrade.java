@@ -3,6 +3,7 @@ package com.chinaex123.more_functionalstorage_upgrade;
 import com.buuz135.functionalstorage.item.component.FunctionalUpgradeBehavior;
 import com.chinaex123.more_functionalstorage_upgrade.register.Item.CustomUpgradeItem;
 import com.chinaex123.more_functionalstorage_upgrade.register.Fluid.ConfigFluidGeneration;
+import com.chinaex123.more_functionalstorage_upgrade.register.Item.ModItems;
 import com.chinaex123.more_functionalstorage_upgrade.register.ModCompat.CreateCompat;
 import com.chinaex123.more_functionalstorage_upgrade.register.ModCreativeTabs;
 import net.minecraft.resources.ResourceLocation;
@@ -40,6 +41,7 @@ public class MoreFunctionalStorageUpgrade {
         ModCreativeTabs.register(modEventBus); // 创造模式物品栏
 
         CustomUpgradeItem.register(modEventBus); // 注册物品
+        ModItems.register(modEventBus); // 注册锻造模板
 
         // 模组兼容 - 机械动力
         if (ModList.get().isLoaded("create")) {

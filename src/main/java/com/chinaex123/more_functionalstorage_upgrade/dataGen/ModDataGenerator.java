@@ -20,6 +20,8 @@ public class ModDataGenerator {
 
         // 注册配方生成器
         generator.addProvider(event.includeServer(), new ModRecipesProvider(packOutput, lookupProvider));
+        // 注册物品模型生成器
+        generator.addProvider(event.includeClient(), new ModItemModelsProvider(packOutput, event.getExistingFileHelper()));
 
     }
 }

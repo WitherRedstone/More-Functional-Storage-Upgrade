@@ -6,13 +6,13 @@
       "item": "more_functionalstorage_upgrade:nether_star_upgrade"
     },
     "B": {
-      "item": "minecraft:chest"
+      "tag": "c:chests"
     },
     "C": {
       "item": "minecraft:heavy_core"
     },
     "D": {
-      "item": "minecraft:diamond_block"
+      "tag": "c:storage_blocks/diamond"
     }
   },
   "pattern": [
