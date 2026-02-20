@@ -91,6 +91,18 @@ public class ModItemModelsProvider extends ItemModelProvider {
         basicItem(CustomUpgradeItem.END_STONE_GENERATOR_UPGRADE_3.get());
         basicItem(CustomUpgradeItem.END_STONE_GENERATOR_UPGRADE_4.get());
         basicItem(CustomUpgradeItem.END_STONE_GENERATOR_UPGRADE_5.get());
+        // 凝灰岩生成升级
+        basicItem(CustomUpgradeItem.TUFF_GENERATOR_UPGRADE_1.get());
+        basicItem(CustomUpgradeItem.TUFF_GENERATOR_UPGRADE_2.get());
+        basicItem(CustomUpgradeItem.TUFF_GENERATOR_UPGRADE_3.get());
+        basicItem(CustomUpgradeItem.TUFF_GENERATOR_UPGRADE_4.get());
+        basicItem(CustomUpgradeItem.TUFF_GENERATOR_UPGRADE_5.get());
+        // 玄武岩生成升级
+        basicItem(CustomUpgradeItem.BASALT_GENERATOR_UPGRADE_1.get());
+        basicItem(CustomUpgradeItem.BASALT_GENERATOR_UPGRADE_2.get());
+        basicItem(CustomUpgradeItem.BASALT_GENERATOR_UPGRADE_3.get());
+        basicItem(CustomUpgradeItem.BASALT_GENERATOR_UPGRADE_4.get());
+        basicItem(CustomUpgradeItem.BASALT_GENERATOR_UPGRADE_5.get());
 
 
         // ==================== 流体功能升级 ====================
@@ -141,6 +153,12 @@ public class ModItemModelsProvider extends ItemModelProvider {
             basicItem(CreateCompat.VERIDIUM_GENERATOR_UPGRADE_3.get());
             basicItem(CreateCompat.VERIDIUM_GENERATOR_UPGRADE_4.get());
             basicItem(CreateCompat.VERIDIUM_GENERATOR_UPGRADE_5.get());
+            // 石灰岩生成升级
+            basicItem(CreateCompat.LIMESTONE_GENERATOR_UPGRADE_1.get());
+            basicItem(CreateCompat.LIMESTONE_GENERATOR_UPGRADE_2.get());
+            basicItem(CreateCompat.LIMESTONE_GENERATOR_UPGRADE_3.get());
+            basicItem(CreateCompat.LIMESTONE_GENERATOR_UPGRADE_4.get());
+            basicItem(CreateCompat.LIMESTONE_GENERATOR_UPGRADE_5.get());
             // 蜂蜜生成升级
             basicItem(CreateCompat.HONEY_GENERATOR_UPGRADE_1.get());
             basicItem(CreateCompat.HONEY_GENERATOR_UPGRADE_2.get());

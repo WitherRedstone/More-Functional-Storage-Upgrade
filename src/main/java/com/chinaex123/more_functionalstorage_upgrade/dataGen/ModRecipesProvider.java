@@ -144,7 +144,6 @@ public class ModRecipesProvider extends RecipeProvider implements IConditionBuil
                 )
                 .unlocks("has_obsidian_generator_upgrade_4", has(CustomUpgradeItem.OBSIDIAN_GENERATOR_UPGRADE_4.get()))
                 .save(recipeOutput, ResourceLocation.fromNamespaceAndPath(MoreFunctionalStorageUpgrade.MOD_ID, "obsidian_generator_upgrade_5"));
-
         // 圆石生成生成升级
         ShapedRecipeBuilder.shaped(RecipeCategory.MISC, CustomUpgradeItem.COBBLESTONE_GENERATOR_UPGRADE_1.get())
                 .pattern("BEB")
@@ -191,7 +190,6 @@ public class ModRecipesProvider extends RecipeProvider implements IConditionBuil
                 )
                 .unlocks("has_cobblestone_generator_upgrade_4", has(CustomUpgradeItem.COBBLESTONE_GENERATOR_UPGRADE_4.get()))
                 .save(recipeOutput, ResourceLocation.fromNamespaceAndPath(MoreFunctionalStorageUpgrade.MOD_ID, "cobblestone_generator_upgrade_5"));
-
         // 泥土生成生成升级
         ShapedRecipeBuilder.shaped(RecipeCategory.MISC, CustomUpgradeItem.DIRT_GENERATOR_UPGRADE_1.get())
                 .pattern("BDB")
@@ -237,7 +235,6 @@ public class ModRecipesProvider extends RecipeProvider implements IConditionBuil
                 )
                 .unlocks("has_dirt_generator_upgrade_4", has(CustomUpgradeItem.DIRT_GENERATOR_UPGRADE_4.get()))
                 .save(recipeOutput, ResourceLocation.fromNamespaceAndPath(MoreFunctionalStorageUpgrade.MOD_ID, "dirt_generator_upgrade_5"));
-
         // 沙子生成生成升级
         ShapedRecipeBuilder.shaped(RecipeCategory.MISC, CustomUpgradeItem.SAND_GENERATOR_UPGRADE_1.get())
                 .pattern("BDB")
@@ -283,7 +280,6 @@ public class ModRecipesProvider extends RecipeProvider implements IConditionBuil
                 )
                 .unlocks("has_sand_generator_upgrade_4", has(CustomUpgradeItem.SAND_GENERATOR_UPGRADE_4.get()))
                 .save(recipeOutput, ResourceLocation.fromNamespaceAndPath(MoreFunctionalStorageUpgrade.MOD_ID, "sand_generator_upgrade_5"));
-
         // 安山岩生成生成升级
         ShapedRecipeBuilder.shaped(RecipeCategory.MISC, CustomUpgradeItem.ANDESITE_GENERATOR_UPGRADE_1.get())
                 .pattern("BDB")
@@ -329,7 +325,6 @@ public class ModRecipesProvider extends RecipeProvider implements IConditionBuil
                 )
                 .unlocks("has_andesite_generator_upgrade_4", has(CustomUpgradeItem.ANDESITE_GENERATOR_UPGRADE_4.get()))
                 .save(recipeOutput, ResourceLocation.fromNamespaceAndPath(MoreFunctionalStorageUpgrade.MOD_ID, "andesite_generator_upgrade_5"));
-
         // 闪长岩生成生成升级
         ShapedRecipeBuilder.shaped(RecipeCategory.MISC, CustomUpgradeItem.DIORITE_GENERATOR_UPGRADE_1.get())
                 .pattern("BDB")
@@ -375,7 +370,6 @@ public class ModRecipesProvider extends RecipeProvider implements IConditionBuil
                 )
                 .unlocks("has_diorite_generator_upgrade_4", has(CustomUpgradeItem.DIORITE_GENERATOR_UPGRADE_4.get()))
                 .save(recipeOutput, ResourceLocation.fromNamespaceAndPath(MoreFunctionalStorageUpgrade.MOD_ID, "diorite_generator_upgrade_5"));
-
         // 花岗岩生成生成升级
         ShapedRecipeBuilder.shaped(RecipeCategory.MISC, CustomUpgradeItem.GRANITE_GENERATOR_UPGRADE_1.get())
                 .pattern("BDB")
@@ -421,7 +415,6 @@ public class ModRecipesProvider extends RecipeProvider implements IConditionBuil
                 )
                 .unlocks("has_granite_generator_upgrade_4", has(CustomUpgradeItem.GRANITE_GENERATOR_UPGRADE_4.get()))
                 .save(recipeOutput, ResourceLocation.fromNamespaceAndPath(MoreFunctionalStorageUpgrade.MOD_ID, "granite_generator_upgrade_5"));
-
         // 深板岩圆石生成生成升级
         ShapedRecipeBuilder.shaped(RecipeCategory.MISC, CustomUpgradeItem.COBBLED_DEEPSLATE_GENERATOR_UPGRADE_1.get())
                 .pattern("BDB")
@@ -467,7 +460,6 @@ public class ModRecipesProvider extends RecipeProvider implements IConditionBuil
                 )
                 .unlocks("has_cobbled_deepslate_generator_upgrade_4", has(CustomUpgradeItem.COBBLED_DEEPSLATE_GENERATOR_UPGRADE_4.get()))
                 .save(recipeOutput, ResourceLocation.fromNamespaceAndPath(MoreFunctionalStorageUpgrade.MOD_ID, "cobbled_deepslate_generator_upgrade_5"));
-
         // 黑石生成生成升级
         ShapedRecipeBuilder.shaped(RecipeCategory.MISC, CustomUpgradeItem.BLACKSTONE_GENERATOR_UPGRADE_1.get())
                 .pattern("BDB")
@@ -513,7 +505,6 @@ public class ModRecipesProvider extends RecipeProvider implements IConditionBuil
                 )
                 .unlocks("has_blackstone_generator_upgrade_4", has(CustomUpgradeItem.BLACKSTONE_GENERATOR_UPGRADE_4.get()))
                 .save(recipeOutput, ResourceLocation.fromNamespaceAndPath(MoreFunctionalStorageUpgrade.MOD_ID, "blackstone_generator_upgrade_5"));
-
         // 黑石生成生成升级
         ShapedRecipeBuilder.shaped(RecipeCategory.MISC, CustomUpgradeItem.NETHERRACK_GENERATOR_UPGRADE_1.get())
                 .pattern("BDB")
@@ -559,7 +550,6 @@ public class ModRecipesProvider extends RecipeProvider implements IConditionBuil
                 )
                 .unlocks("has_netherrack_generator_upgrade_4", has(CustomUpgradeItem.NETHERRACK_GENERATOR_UPGRADE_4.get()))
                 .save(recipeOutput, ResourceLocation.fromNamespaceAndPath(MoreFunctionalStorageUpgrade.MOD_ID, "netherrack_generator_upgrade_5"));
-
         // 末地石生成生成升级
         ShapedRecipeBuilder.shaped(RecipeCategory.MISC, CustomUpgradeItem.END_STONE_GENERATOR_UPGRADE_1.get())
                 .pattern("BDB")
@@ -605,6 +595,96 @@ public class ModRecipesProvider extends RecipeProvider implements IConditionBuil
                 )
                 .unlocks("has_end_stone_generator_upgrade_4", has(CustomUpgradeItem.END_STONE_GENERATOR_UPGRADE_4.get()))
                 .save(recipeOutput, ResourceLocation.fromNamespaceAndPath(MoreFunctionalStorageUpgrade.MOD_ID, "end_stone_generator_upgrade_5"));
+        // 凝灰岩生成生成升级
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, CustomUpgradeItem.TUFF_GENERATOR_UPGRADE_1.get())
+                .pattern("BDB")
+                .pattern("CAC")
+                .pattern("BDB")
+                .define('A', StorageTags.DRAWER)
+                .define('B', Tags.Items.INGOTS_IRON)
+                .define('C', Items.POLISHED_TUFF)
+                .define('D', Tags.Items.STORAGE_BLOCKS_IRON)
+                .unlockedBy("has_tuff_generator_upgrade", has(StorageTags.DRAWER))
+                .save(recipeOutput);
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, CustomUpgradeItem.TUFF_GENERATOR_UPGRADE_2.get())
+                .pattern("BCB")
+                .pattern("BAB")
+                .pattern("BCB")
+                .define('A', CustomUpgradeItem.TUFF_GENERATOR_UPGRADE_1.get())
+                .define('B', Tags.Items.INGOTS_GOLD)
+                .define('C', Tags.Items.STORAGE_BLOCKS_GOLD)
+                .unlockedBy("has_tuff_generator_upgrade_1", has(CustomUpgradeItem.TUFF_GENERATOR_UPGRADE_1.get()))
+                .save(recipeOutput);
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, CustomUpgradeItem.TUFF_GENERATOR_UPGRADE_3.get())
+                .pattern("BCB")
+                .pattern("BAB")
+                .pattern("BCB")
+                .define('A', CustomUpgradeItem.TUFF_GENERATOR_UPGRADE_2.get())
+                .define('B', Tags.Items.GEMS_DIAMOND)
+                .define('C', Tags.Items.STORAGE_BLOCKS_DIAMOND)
+                .unlockedBy("has_tuff_generator_upgrade_2", has(CustomUpgradeItem.TUFF_GENERATOR_UPGRADE_2.get()))
+                .save(recipeOutput);
+        SmithingTransformRecipeBuilder.smithing(
+                        Ingredient.of(Items.NETHERITE_UPGRADE_SMITHING_TEMPLATE),
+                        Ingredient.of(CustomUpgradeItem.TUFF_GENERATOR_UPGRADE_3.get()),
+                        Ingredient.of(Items.NETHERITE_INGOT),
+                        RecipeCategory.MISC, CustomUpgradeItem.TUFF_GENERATOR_UPGRADE_4.get()
+                )
+                .unlocks("has_tuff_generator_upgrade_3", has(CustomUpgradeItem.TUFF_GENERATOR_UPGRADE_3.get()))
+                .save(recipeOutput, ResourceLocation.fromNamespaceAndPath(MoreFunctionalStorageUpgrade.MOD_ID, "tuff_generator_upgrade_4"));
+        SmithingTransformRecipeBuilder.smithing(
+                        Ingredient.of(ModItems.GENERATOR_UPGRADE_SMITHING_TEMPLATE),
+                        Ingredient.of(CustomUpgradeItem.TUFF_GENERATOR_UPGRADE_4.get()),
+                        Ingredient.of(Items.HEART_OF_THE_SEA),
+                        RecipeCategory.MISC, CustomUpgradeItem.TUFF_GENERATOR_UPGRADE_5.get()
+                )
+                .unlocks("has_tuff_generator_upgrade_4", has(CustomUpgradeItem.TUFF_GENERATOR_UPGRADE_4.get()))
+                .save(recipeOutput, ResourceLocation.fromNamespaceAndPath(MoreFunctionalStorageUpgrade.MOD_ID, "tuff_generator_upgrade_5"));
+        // 玄武岩生成生成升级
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, CustomUpgradeItem.BASALT_GENERATOR_UPGRADE_1.get())
+                .pattern("BDB")
+                .pattern("CAC")
+                .pattern("BDB")
+                .define('A', StorageTags.DRAWER)
+                .define('B', Tags.Items.INGOTS_IRON)
+                .define('C', Items.POLISHED_BASALT)
+                .define('D', Tags.Items.STORAGE_BLOCKS_IRON)
+                .unlockedBy("has_basalt_generator_upgrade", has(StorageTags.DRAWER))
+                .save(recipeOutput);
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, CustomUpgradeItem.BASALT_GENERATOR_UPGRADE_2.get())
+                .pattern("BCB")
+                .pattern("BAB")
+                .pattern("BCB")
+                .define('A', CustomUpgradeItem.BASALT_GENERATOR_UPGRADE_1.get())
+                .define('B', Tags.Items.INGOTS_GOLD)
+                .define('C', Tags.Items.STORAGE_BLOCKS_GOLD)
+                .unlockedBy("has_basalt_generator_upgrade_1", has(CustomUpgradeItem.BASALT_GENERATOR_UPGRADE_1.get()))
+                .save(recipeOutput);
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, CustomUpgradeItem.BASALT_GENERATOR_UPGRADE_3.get())
+                .pattern("BCB")
+                .pattern("BAB")
+                .pattern("BCB")
+                .define('A', CustomUpgradeItem.BASALT_GENERATOR_UPGRADE_2.get())
+                .define('B', Tags.Items.GEMS_DIAMOND)
+                .define('C', Tags.Items.STORAGE_BLOCKS_DIAMOND)
+                .unlockedBy("has_basalt_generator_upgrade_2", has(CustomUpgradeItem.BASALT_GENERATOR_UPGRADE_2.get()))
+                .save(recipeOutput);
+        SmithingTransformRecipeBuilder.smithing(
+                        Ingredient.of(Items.NETHERITE_UPGRADE_SMITHING_TEMPLATE),
+                        Ingredient.of(CustomUpgradeItem.BASALT_GENERATOR_UPGRADE_3.get()),
+                        Ingredient.of(Items.NETHERITE_INGOT),
+                        RecipeCategory.MISC, CustomUpgradeItem.BASALT_GENERATOR_UPGRADE_4.get()
+                )
+                .unlocks("has_basalt_generator_upgrade_3", has(CustomUpgradeItem.BASALT_GENERATOR_UPGRADE_3.get()))
+                .save(recipeOutput, ResourceLocation.fromNamespaceAndPath(MoreFunctionalStorageUpgrade.MOD_ID, "basalt_generator_upgrade_4"));
+        SmithingTransformRecipeBuilder.smithing(
+                        Ingredient.of(ModItems.GENERATOR_UPGRADE_SMITHING_TEMPLATE),
+                        Ingredient.of(CustomUpgradeItem.BASALT_GENERATOR_UPGRADE_4.get()),
+                        Ingredient.of(Items.HEART_OF_THE_SEA),
+                        RecipeCategory.MISC, CustomUpgradeItem.BASALT_GENERATOR_UPGRADE_5.get()
+                )
+                .unlocks("has_basalt_generator_upgrade_4", has(CustomUpgradeItem.BASALT_GENERATOR_UPGRADE_4.get()))
+                .save(recipeOutput, ResourceLocation.fromNamespaceAndPath(MoreFunctionalStorageUpgrade.MOD_ID, "basalt_generator_upgrade_5"));
 
 
         // ==================== 流体功能升级 ====================
@@ -938,6 +1018,53 @@ public class ModRecipesProvider extends RecipeProvider implements IConditionBuil
                     .unlocks("has_veridium_generator_upgrade_5", has(CreateCompat.VERIDIUM_GENERATOR_UPGRADE_4.get()))
                     .save(recipeOutput.withConditions(modLoaded("create")),
                             ResourceLocation.fromNamespaceAndPath(MoreFunctionalStorageUpgrade.MOD_ID, "veridium_generator_upgrade_5"));
+            // 石灰岩生成升级
+            ShapedRecipeBuilder.shaped(RecipeCategory.MISC, CreateCompat.LIMESTONE_GENERATOR_UPGRADE_1.get())
+                    .pattern("BDB")
+                    .pattern("CAC")
+                    .pattern("BDB")
+                    .define('A', StorageTags.DRAWER)
+                    .define('B', Tags.Items.INGOTS_IRON)
+                    .define('C', getItem("create:polished_cut_limestone"))
+                    .define('D', Tags.Items.STORAGE_BLOCKS_IRON)
+                    .unlockedBy("has_limestone_generator_upgrade", has(FunctionalStorage.DRIPPING_UPGRADE.get()))
+                    .save(recipeOutput.withConditions(modLoaded("create")));
+            ShapedRecipeBuilder.shaped(RecipeCategory.MISC, CreateCompat.LIMESTONE_GENERATOR_UPGRADE_2.get())
+                    .pattern("BCB")
+                    .pattern("BAB")
+                    .pattern("BCB")
+                    .define('A', CreateCompat.LIMESTONE_GENERATOR_UPGRADE_1.get())
+                    .define('B', Tags.Items.INGOTS_GOLD)
+                    .define('C', Tags.Items.STORAGE_BLOCKS_GOLD)
+                    .unlockedBy("has_limestone_generator_upgrade_1", has(CreateCompat.LIMESTONE_GENERATOR_UPGRADE_1.get()))
+                    .save(recipeOutput.withConditions(modLoaded("create")));
+            ShapedRecipeBuilder.shaped(RecipeCategory.MISC, CreateCompat.LIMESTONE_GENERATOR_UPGRADE_3.get())
+                    .pattern("BCB")
+                    .pattern("BAB")
+                    .pattern("BCB")
+                    .define('A', CreateCompat.LIMESTONE_GENERATOR_UPGRADE_2.get())
+                    .define('B', Tags.Items.GEMS_DIAMOND)
+                    .define('C', Tags.Items.STORAGE_BLOCKS_DIAMOND)
+                    .unlockedBy("has_limestone_generator_upgrade_2", has(CreateCompat.LIMESTONE_GENERATOR_UPGRADE_2.get()))
+                    .save(recipeOutput.withConditions(modLoaded("create")));
+            SmithingTransformRecipeBuilder.smithing(
+                            Ingredient.of(Items.NETHERITE_UPGRADE_SMITHING_TEMPLATE),
+                            Ingredient.of(CreateCompat.LIMESTONE_GENERATOR_UPGRADE_3.get()),
+                            Ingredient.of(Items.NETHERITE_INGOT),
+                            RecipeCategory.MISC, CreateCompat.LIMESTONE_GENERATOR_UPGRADE_4.get()
+                    )
+                    .unlocks("has_limestone_generator_upgrade_3", has(CreateCompat.LIMESTONE_GENERATOR_UPGRADE_3.get()))
+                    .save(recipeOutput.withConditions(modLoaded("create")),
+                            ResourceLocation.fromNamespaceAndPath(MoreFunctionalStorageUpgrade.MOD_ID, "limestone_generator_upgrade_4"));
+            SmithingTransformRecipeBuilder.smithing(
+                            Ingredient.of(ModItems.GENERATOR_UPGRADE_SMITHING_TEMPLATE),
+                            Ingredient.of(CreateCompat.LIMESTONE_GENERATOR_UPGRADE_4.get()),
+                            Ingredient.of(Items.HEART_OF_THE_SEA),
+                            RecipeCategory.MISC, CreateCompat.LIMESTONE_GENERATOR_UPGRADE_5.get()
+                    )
+                    .unlocks("has_limestone_generator_upgrade_5", has(CreateCompat.LIMESTONE_GENERATOR_UPGRADE_4.get()))
+                    .save(recipeOutput.withConditions(modLoaded("create")),
+                            ResourceLocation.fromNamespaceAndPath(MoreFunctionalStorageUpgrade.MOD_ID, "limestone_generator_upgrade_5"));
 
             // 蜂蜜生成升级
             ShapedRecipeBuilder.shaped(RecipeCategory.MISC, CreateCompat.HONEY_GENERATOR_UPGRADE_1.get())

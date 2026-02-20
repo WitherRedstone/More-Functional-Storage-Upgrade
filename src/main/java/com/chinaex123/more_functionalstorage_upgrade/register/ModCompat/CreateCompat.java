@@ -129,6 +129,22 @@ public class CreateCompat {
     public static final DeferredItem<Item> VERIDIUM_GENERATOR_UPGRADE_5 =
             ITEMS.register("veridium_generator_upgrade_5",
                     () -> createItemGenerator("create:veridium", 64, 1));
+    // 辉绿岩生成升级
+    public static final DeferredItem<Item> LIMESTONE_GENERATOR_UPGRADE_1 =
+            ITEMS.register("limestone_generator_upgrade_1",
+                    () -> createItemGenerator("create:limestone", 8, 20));
+    public static final DeferredItem<Item> LIMESTONE_GENERATOR_UPGRADE_2 =
+            ITEMS.register("limestone_generator_upgrade_2",
+                    () -> createItemGenerator("create:limestone", 16, 15));
+    public static final DeferredItem<Item> LIMESTONE_GENERATOR_UPGRADE_3 =
+            ITEMS.register("limestone_generator_upgrade_3",
+                    () -> createItemGenerator("create:limestone", 32, 10));
+    public static final DeferredItem<Item> LIMESTONE_GENERATOR_UPGRADE_4 =
+            ITEMS.register("limestone_generator_upgrade_4",
+                    () -> createItemGenerator("create:limestone", 64, 5));
+    public static final DeferredItem<Item> LIMESTONE_GENERATOR_UPGRADE_5 =
+            ITEMS.register("limestone_generator_upgrade_5",
+                    () -> createItemGenerator("create:limestone", 64, 1));
 
     // 蜂蜜生成升级
     public static final DeferredItem<Item> HONEY_GENERATOR_UPGRADE_1 =

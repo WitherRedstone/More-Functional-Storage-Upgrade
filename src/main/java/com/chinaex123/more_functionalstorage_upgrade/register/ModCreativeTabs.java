@@ -98,6 +98,18 @@ public class ModCreativeTabs {
                         output.accept(CustomUpgradeItem.END_STONE_GENERATOR_UPGRADE_3.get());
                         output.accept(CustomUpgradeItem.END_STONE_GENERATOR_UPGRADE_4.get());
                         output.accept(CustomUpgradeItem.END_STONE_GENERATOR_UPGRADE_5.get());
+                        // 凝灰岩生成升级
+                        output.accept(CustomUpgradeItem.TUFF_GENERATOR_UPGRADE_1.get());
+                        output.accept(CustomUpgradeItem.TUFF_GENERATOR_UPGRADE_2.get());
+                        output.accept(CustomUpgradeItem.TUFF_GENERATOR_UPGRADE_3.get());
+                        output.accept(CustomUpgradeItem.TUFF_GENERATOR_UPGRADE_4.get());
+                        output.accept(CustomUpgradeItem.TUFF_GENERATOR_UPGRADE_5.get());
+                        // 玄武岩生成升级
+                        output.accept(CustomUpgradeItem.BASALT_GENERATOR_UPGRADE_1.get());
+                        output.accept(CustomUpgradeItem.BASALT_GENERATOR_UPGRADE_2.get());
+                        output.accept(CustomUpgradeItem.BASALT_GENERATOR_UPGRADE_3.get());
+                        output.accept(CustomUpgradeItem.BASALT_GENERATOR_UPGRADE_4.get());
+                        output.accept(CustomUpgradeItem.BASALT_GENERATOR_UPGRADE_5.get());
 
 
 
@@ -150,6 +162,12 @@ public class ModCreativeTabs {
                             output.accept(CreateCompat.VERIDIUM_GENERATOR_UPGRADE_3.get());
                             output.accept(CreateCompat.VERIDIUM_GENERATOR_UPGRADE_4.get());
                             output.accept(CreateCompat.VERIDIUM_GENERATOR_UPGRADE_5.get());
+                            // 石灰岩生成升级
+                            output.accept(CreateCompat.LIMESTONE_GENERATOR_UPGRADE_1.get());
+                            output.accept(CreateCompat.LIMESTONE_GENERATOR_UPGRADE_2.get());
+                            output.accept(CreateCompat.LIMESTONE_GENERATOR_UPGRADE_3.get());
+                            output.accept(CreateCompat.LIMESTONE_GENERATOR_UPGRADE_4.get());
+                            output.accept(CreateCompat.LIMESTONE_GENERATOR_UPGRADE_5.get());
                             // 蜂蜜生成升级
                             output.accept(CreateCompat.HONEY_GENERATOR_UPGRADE_1.get());
                             output.accept(CreateCompat.HONEY_GENERATOR_UPGRADE_2.get());

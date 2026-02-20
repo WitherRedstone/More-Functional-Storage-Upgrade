@@ -22,7 +22,6 @@ public class MoreUpgradeItem extends UpgradeItem {
         HEAVY_CORE_UPGRADE("heavy_core_upgrade", 128.0f, Mth.color(153/255f, 50/255f, 204/255f), false);
 
 
-
         private final String name;          // 升级类型的名称
         private final float multiplier;     // 容量倍率
         private final int color;            // 物品名称颜色
