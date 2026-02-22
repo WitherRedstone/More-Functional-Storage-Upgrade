@@ -26,6 +26,18 @@ public record ConfigFluidGeneration(FluidStack fluid, int amountPerTick, int int
                     Codec.INT.fieldOf("interval").orElse(20).forGetter(ConfigFluidGeneration::interval)
             ).apply(instance, ConfigFluidGeneration::new));
 
+    /**
+     * 执行流体生成逻辑
+     *
+     * @param level 游戏世界对象
+     * @param pos 抽屉方块的位置
+     * @param drawer 可控制的抽屉方块实体
+     * @param upgradeStack 升级物品堆栈
+     * @param upgradeSlot 升级槽位索引
+     * <p>
+     * 此方法负责在指定间隔时间内生成流体，并将其填充到合适的容器中。
+     * 优先填充抽屉本身，其次检查上方容器的流体处理能力。
+     */
     @Override
     public void work(Level level, BlockPos pos, ControllableDrawerTile<?> drawer,
                      ItemStack upgradeStack, int upgradeSlot) {
@@ -50,11 +62,19 @@ public record ConfigFluidGeneration(FluidStack fluid, int amountPerTick, int int
         return CODEC;
     }
 
+    /**
+     * 获取流体生成升级的工具提示信息
+     *
+     * @return List<Component> 包含工具提示信息的组件列表
+     * <p>
+     * 此方法扩展了父类的工具提示功能，添加了特定于流体生成的信息，
+     * 显示每次生成的流体量和流体名称。
+     */
     @Override
     public List<Component> getTooltip() {
         var list = FunctionalUpgradeBehavior.super.getTooltip();
         list.add(Component.translatable("moreupgrade.desc.fluid_generation",
-                amountPerTick, // 每次生成时的流体量
+                amountPerTick,
                 fluid.getHoverName().getString()));
         return list;
     }

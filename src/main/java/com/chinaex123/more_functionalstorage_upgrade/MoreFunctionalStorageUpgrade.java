@@ -1,12 +1,15 @@
 package com.chinaex123.more_functionalstorage_upgrade;
 
 import com.buuz135.functionalstorage.item.component.FunctionalUpgradeBehavior;
+import com.chinaex123.more_functionalstorage_upgrade.register.Item.ConfigItemGeneration;
 import com.chinaex123.more_functionalstorage_upgrade.register.Item.CustomUpgradeItem;
 import com.chinaex123.more_functionalstorage_upgrade.register.Fluid.ConfigFluidGeneration;
 import com.chinaex123.more_functionalstorage_upgrade.register.Item.ModItems;
 import com.chinaex123.more_functionalstorage_upgrade.register.ModCompat.CreateCompat;
 import com.chinaex123.more_functionalstorage_upgrade.register.ModCreativeTabs;
 import net.minecraft.resources.ResourceLocation;
+import net.minecraft.world.item.ItemStack;
+import net.minecraft.world.item.Items;
 import net.neoforged.fml.ModList;
 import net.neoforged.neoforge.registries.RegisterEvent;
 import org.slf4j.Logger;
@@ -45,6 +48,7 @@ public class MoreFunctionalStorageUpgrade {
 
         // 模组兼容 - 机械动力
         if (ModList.get().isLoaded("create")) {
+            LOGGER.info("Create mod detected, registering compatibility...");
             CreateCompat.register();
         }
 
@@ -62,17 +66,19 @@ public class MoreFunctionalStorageUpgrade {
                     ResourceLocation.fromNamespaceAndPath(MOD_ID, "configurable_fluid_generation"),
                     () -> ConfigFluidGeneration.CODEC
             );
+
+            // 注册配置化物品生成行为
+            event.register(
+                    FunctionalUpgradeBehavior.REGISTRY_KEY,
+                    ResourceLocation.fromNamespaceAndPath(MOD_ID, "configurable_item_generation"),
+                    () -> ConfigItemGeneration.CODEC
+            );
         }
     }
 
-
-    private void commonSetup(final FMLCommonSetupEvent event) {
-    }
+    private void commonSetup(final FMLCommonSetupEvent event) {}
 
     // 可以使用 @SubscribeEvent 并让事件总线自动发现要调用的方法
     @SubscribeEvent
-    public void onServerStarting(ServerStartingEvent event) {
-        // 服务器启动时执行某些操作
-        LOGGER.info("HELLO from server starting");
-    }
+    public void onServerStarting(ServerStartingEvent event) {}
 }

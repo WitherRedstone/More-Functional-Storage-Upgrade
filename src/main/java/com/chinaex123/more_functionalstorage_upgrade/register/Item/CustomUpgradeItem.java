@@ -22,7 +22,6 @@ public class CustomUpgradeItem {
     public static final DeferredRegister.Items ITEMS =
             DeferredRegister.createItems(MoreFunctionalStorageUpgrade.MOD_ID);
 
-    // ================= 物品生成工厂方法 =================
     /**
      * 创建物品生成器升级
      * @param itemToGenerate 要生成的物品和数量
@@ -37,7 +36,6 @@ public class CustomUpgradeItem {
         );
     }
 
-    // ================= 流体生成工厂方法 =================
     /**
      * 创建流体生成器升级
      * @param fluidToGenerate 要生成的流体和数量
@@ -51,7 +49,16 @@ public class CustomUpgradeItem {
                 ))
         );
     }
-    // 特殊流体获取
+
+    /**
+     * 根据流体ID和数量创建流体堆栈
+     *
+     * @param fluidId 流体的资源位置标识符
+     * @param amount 流体的数量（毫桶）
+     * @return FluidStack 对应的流体堆栈对象
+     *
+     * 此方法从内置注册表中获取指定ID的流体，并创建包含指定数量的流体堆栈。
+     */
     private static FluidStack getFluid(String fluidId, int amount) {
         var fluid = BuiltInRegistries.FLUID.get(ResourceLocation.parse(fluidId));
         return new FluidStack(fluid, amount);

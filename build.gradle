@@ -130,7 +130,8 @@ dependencies {
     // 兼容 - 机械动力
     implementation "curse.maven:create-328085:7178775"
 
-
+    // 钠
+    //implementation "curse.maven:sodium-394468:6382651"
 
     // Example optional mod dependency with JEI
     // The JEI API is declared for compile time use, while the full JEI artifact is used at runtime

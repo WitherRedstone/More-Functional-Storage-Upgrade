@@ -9,6 +9,7 @@ import net.minecraft.core.registries.BuiltInRegistries;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.ItemStack;
+import net.minecraft.world.item.Items;
 import net.neoforged.fml.ModList;
 import net.neoforged.neoforge.fluids.FluidStack;
 import net.neoforged.neoforge.registries.DeferredItem;
@@ -22,17 +23,19 @@ public class CreateCompat {
         return ModList.get().isLoaded("create");
     }
 
-    // ==================== 通用获取方法 ====================
-    // 获取流体
+    /**
+     * 根据流体ID和数量创建流体堆栈
+     *
+     * @param fluidId 流体的资源位置标识符
+     * @param amount 流体的数量（毫桶）
+     * @return FluidStack 对应的流体堆栈对象
+     * <p>
+     * 此方法从内置注册表中获取指定ID的流体，并创建包含指定数量的流体堆栈。
+     * 主要用于创建机械动力模组的流体生成升级物品。
+     */
     private static FluidStack getFluid(String fluidId, int amount) {
         var fluid = BuiltInRegistries.FLUID.get(ResourceLocation.parse(fluidId));
         return new FluidStack(fluid, amount);
-    }
-
-    // 获取物品
-    private static ItemStack getItem(String itemId, int count) {
-        var item = BuiltInRegistries.ITEM.get(ResourceLocation.parse(itemId));
-        return new ItemStack(item, count);
     }
 
     // ==================== 创建升级物品的工厂方法 ====================
@@ -58,8 +61,8 @@ public class CreateCompat {
      */
     private static Item createItemGenerator(String itemId, int count, int interval) {
         return new FSItem(new Item.Properties().component(FSAttachments.FUNCTIONAL_BEHAVIOR,
-                new ExecuteEveryBehavior(interval, new ConfigItemGeneration(
-                        getItem(itemId, count), count, interval)
+                new ExecuteEveryBehavior(interval, new ConfigItemGeneration.Delayed(
+                        itemId, count, interval)
                 ))
         );
     }
