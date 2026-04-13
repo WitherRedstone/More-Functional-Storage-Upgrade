@@ -24,34 +24,26 @@ import net.neoforged.fml.event.lifecycle.FMLCommonSetupEvent;
 import net.neoforged.neoforge.common.NeoForge;
 import net.neoforged.neoforge.event.server.ServerStartingEvent;
 
-// 这里的值应与 META-INF/neoforge.mods.toml 文件中的条目对应
 @Mod(MoreFunctionalStorageUpgrade.MOD_ID)
 public class MoreFunctionalStorageUpgrade {
-    // 在公共位置定义模组ID，供所有地方引用
     public static final String MOD_ID = "more_functionalstorage_upgrade";
-    // 直接引用 slf4j 日志记录器
     public static final Logger LOGGER = LogUtils.getLogger();
 
-    // 模组类的构造函数是模组加载时运行的第一段代码
-    // FML 会自动识别某些参数类型（如 IEventBus 或 ModContainer）并传入
     public MoreFunctionalStorageUpgrade(IEventBus modEventBus, ModContainer modContainer) {
-        // 为模组加载注册 commonSetup 方法
         modEventBus.addListener(this::commonSetup);
         modEventBus.addListener(this::registerBehaviors); // 添加行为注册监听器
         NeoForge.EVENT_BUS.register(this);
 
-        // 将物品注册到游戏
-        ModCreativeTabs.register(modEventBus); // 创造模式物品栏
+        ModCreativeTabs.register(modEventBus);
 
-        CustomUpgradeItem.register(modEventBus); // 注册物品
-        ModItems.register(modEventBus); // 注册锻造模板
+        CustomUpgradeItem.register(modEventBus);
+        ModItems.register(modEventBus);
 
         // 模组兼容 - 机械动力
         if (ModList.get().isLoaded("create")) {
             LOGGER.info("Create mod detected, registering compatibility...");
             CreateCompat.register();
         }
-
     }
 
     /**
@@ -75,10 +67,4 @@ public class MoreFunctionalStorageUpgrade {
             );
         }
     }
-
-    private void commonSetup(final FMLCommonSetupEvent event) {}
-
-    // 可以使用 @SubscribeEvent 并让事件总线自动发现要调用的方法
-    @SubscribeEvent
-    public void onServerStarting(ServerStartingEvent event) {}
 }

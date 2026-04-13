@@ -1,0 +1,38 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "create"
+    }
+  ],
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "more_functionalstorage_upgrade:veridium_generator_upgrade_4"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    },
+    "has_veridium_generator_upgrade_3": {
+      "conditions": {
+        "items": [
+          {
+            "items": "more_functionalstorage_upgrade:veridium_generator_upgrade_3"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "requirements": [
+    [
+      "has_the_recipe",
+      "has_veridium_generator_upgrade_3"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "more_functionalstorage_upgrade:veridium_generator_upgrade_4"
+    ]
+  }
+}

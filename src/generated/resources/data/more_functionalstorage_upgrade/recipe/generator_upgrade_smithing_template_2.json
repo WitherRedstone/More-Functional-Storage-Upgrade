@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "A": {
+      "item": "minecraft:heart_of_the_sea"
+    },
+    "B": {
+      "item": "more_functionalstorage_upgrade:generator_upgrade_smithing_template"
+    },
+    "C": {
+      "tag": "c:gems/diamond"
+    }
+  },
+  "pattern": [
+    "CBC",
+    "CAC",
+    "CCC"
+  ],
+  "result": {
+    "count": 2,
+    "id": "more_functionalstorage_upgrade:generator_upgrade_smithing_template"
+  }
+}

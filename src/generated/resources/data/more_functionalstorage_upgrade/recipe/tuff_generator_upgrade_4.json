@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:smithing_transform",
+  "addition": {
+    "item": "minecraft:netherite_ingot"
+  },
+  "base": {
+    "item": "more_functionalstorage_upgrade:tuff_generator_upgrade_3"
+  },
+  "result": {
+    "count": 1,
+    "id": "more_functionalstorage_upgrade:tuff_generator_upgrade_4"
+  },
+  "template": {
+    "item": "minecraft:netherite_upgrade_smithing_template"
+  }
+}

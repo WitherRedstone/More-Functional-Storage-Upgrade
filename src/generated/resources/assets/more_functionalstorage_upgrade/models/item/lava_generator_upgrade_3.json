@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:item/generated",
+  "textures": {
+    "layer0": "more_functionalstorage_upgrade:item/lava_generator_upgrade_3"
+  }
+}

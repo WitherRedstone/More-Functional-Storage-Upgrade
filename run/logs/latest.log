@@ -1,0 +1,209 @@
+[262月2026 10:29:50.886] [main/INFO] [cpw.mods.modlauncher.Launcher/MODLAUNCHER]: ModLauncher running: args [--launchTarget, forgeclientdev, --version, 21.1.219, --assetIndex, 17, --assetsDir, C:\\Users\\1\\.gradle\\caches\\neoformruntime\\assets, --gameDir, ., --fml.fmlVersion, 4.0.42, --fml.mcVersion, 1.21.1, --fml.neoForgeVersion, 21.1.219, --fml.neoFormVersion, 20240808.144430]
+[262月2026 10:29:50.891] [main/INFO] [cpw.mods.modlauncher.Launcher/MODLAUNCHER]: JVM identified as Oracle Corporation Java HotSpot(TM) 64-Bit Server VM 21.0.8+12-LTS-250
+[262月2026 10:29:50.893] [main/INFO] [cpw.mods.modlauncher.Launcher/MODLAUNCHER]: ModLauncher 11.0.5+main.901c6ea8 starting: java version 21.0.8 by Oracle Corporation; OS Windows 10 arch amd64 version 10.0
+[262月2026 10:29:51.029] [main/INFO] [net.neoforged.fml.loading.ImmediateWindowHandler/]: Loading ImmediateWindowProvider fmlearlywindow
+[262月2026 10:29:51.168] [main/INFO] [EARLYDISPLAY/]: Trying GL version 4.6
+[262月2026 10:29:51.236] [main/INFO] [EARLYDISPLAY/]: Requested GL version 4.6 got version 4.6
+[262月2026 10:29:51.391] [main/INFO] [mixin/]: SpongePowered MIXIN Subsystem Version=0.8.7 Source=union:/C:/Users/1/.gradle/caches/modules-2/files-2.1/net.fabricmc/sponge-mixin/0.15.2+mixin.0.8.7/2af2f021d8e02a0220dc27a7a72b4666d66d44ca/sponge-mixin-0.15.2+mixin.0.8.7.jar%23138!/ Service=ModLauncher Env=CLIENT
+[262月2026 10:29:51.587] [pool-2-thread-1/INFO] [EARLYDISPLAY/]: GL info: Intel(R) UHD Graphics 630 GL version 4.6.0 - Build 27.20.100.9664, Intel
+[262月2026 10:29:51.996] [main/INFO] [net.neoforged.fml.loading.moddiscovery.locators.JarInJarDependencyLocator/]: Found 5 dependencies adding them to mods collection
+[262月2026 10:29:51.998] [main/INFO] [net.neoforged.fml.loading.moddiscovery.ModDiscoverer/]: 
+     Mod List:
+		Name Version (Mod Id)
+
+		Create 6.0.8 (create)
+		Flywheel 1.0.5 (flywheel)
+		Functional Storage 1.21.1-1.5.5 (functionalstorage)
+		Just Enough Items 19.27.0.340 (jei)
+		Minecraft 1.21.1 (minecraft)
+		More Functional Storage upgrade 1.2.2-mc1.21.1-neoforge (more_functionalstorage_upgrade)
+		NeoForge 21.1.219 (neoforge)
+		Ponder 1.0.64 (ponder)
+		Titanium 4.0.40 (titanium)
+[262月2026 10:29:53.180] [main/INFO] [mixin/]: Compatibility level set to JAVA_21
+[262月2026 10:29:53.208] [main/INFO] [cpw.mods.modlauncher.LaunchServiceHandler/MODLAUNCHER]: Launching target 'forgeclientdev' with arguments [--version, 21.1.219, --gameDir, ., --assetsDir, C:\Users\1\.gradle\caches\neoformruntime\assets, --assetIndex, 17]
+[262月2026 10:29:53.753] [main/WARN] [mixin/]: Error loading class: xaero/map/gui/GuiMap (java.lang.ClassNotFoundException: xaero.map.gui.GuiMap)
+[262月2026 10:29:53.754] [main/WARN] [mixin/]: @Mixin target xaero.map.gui.GuiMap was not found create.mixins.json:compat.xaeros.XaeroFullscreenMapAccessor from mod create
+[262月2026 10:29:53.754] [main/WARN] [mixin/]: Error loading class: xaero/map/gui/GuiMap (java.lang.ClassNotFoundException: xaero.map.gui.GuiMap)
+[262月2026 10:29:53.755] [main/WARN] [mixin/]: @Mixin target xaero.map.gui.GuiMap was not found create.mixins.json:compat.xaeros.XaeroFullscreenMapMixin from mod create
+[262月2026 10:29:53.778] [main/WARN] [mixin/]: Error loading class: org/jetbrains/annotations/ApiStatus$ScheduledForRemoval (java.lang.ClassNotFoundException: org.jetbrains.annotations.ApiStatus$ScheduledForRemoval)
+[262月2026 10:29:53.817] [main/INFO] [MixinExtras|Service/]: Initializing MixinExtras via com.llamalad7.mixinextras.service.MixinExtrasServiceImpl(version=0.5.0).
+[262月2026 10:29:55.674] [Datafixer Bootstrap/INFO] [com.mojang.datafixers.DataFixerBuilder/]: 229 Datafixer optimizations took 410 milliseconds
+[262月2026 10:30:01.305] [main/WARN] [net.minecraft.commands.Commands/]: Ambiguity between arguments [teleport, location] and [teleport, destination] with inputs: [0.1 -0.5 .9, 0 0 0]
+[262月2026 10:30:01.306] [main/WARN] [net.minecraft.commands.Commands/]: Ambiguity between arguments [teleport, location] and [teleport, targets] with inputs: [0.1 -0.5 .9, 0 0 0]
+[262月2026 10:30:01.309] [main/WARN] [net.minecraft.commands.Commands/]: Ambiguity between arguments [teleport, destination] and [teleport, targets] with inputs: [Player, 0123, @e, dd12be42-52a9-4a91-a8a1-11c01849e498]
+[262月2026 10:30:01.311] [main/WARN] [net.minecraft.commands.Commands/]: Ambiguity between arguments [teleport, targets] and [teleport, destination] with inputs: [Player, 0123, dd12be42-52a9-4a91-a8a1-11c01849e498]
+[262月2026 10:30:01.313] [main/WARN] [net.minecraft.commands.Commands/]: Ambiguity between arguments [teleport, targets, location] and [teleport, targets, destination] with inputs: [0.1 -0.5 .9, 0 0 0]
+[262月2026 10:30:01.437] [Render thread/WARN] [net.minecraft.server.packs.VanillaPackResourcesBuilder/]: Assets URL 'union:/D:/Games/Minecraft/My%20Mods/More%20Functionalstorage%20Upgrade/more_functionalstorage_upgrade-1.21.1-neoforge/build/moddev/artifacts/neoforge-21.1.219.jar%23189!/assets/.mcassetsroot' uses unexpected schema
+[262月2026 10:30:01.438] [Render thread/WARN] [net.minecraft.server.packs.VanillaPackResourcesBuilder/]: Assets URL 'union:/D:/Games/Minecraft/My%20Mods/More%20Functionalstorage%20Upgrade/more_functionalstorage_upgrade-1.21.1-neoforge/build/moddev/artifacts/neoforge-21.1.219.jar%23189!/data/.mcassetsroot' uses unexpected schema
+[262月2026 10:30:01.460] [Render thread/INFO] [com.mojang.authlib.yggdrasil.YggdrasilAuthenticationService/]: Environment: Environment[sessionHost=https://sessionserver.mojang.com, servicesHost=https://api.minecraftservices.com, name=PROD]
+[262月2026 10:30:01.471] [Render thread/INFO] [net.minecraft.client.Minecraft/]: Setting user: Dev
+[262月2026 10:30:01.594] [Render thread/INFO] [net.minecraft.client.Minecraft/]: Backend library: LWJGL version 3.3.3+5
+[262月2026 10:30:01.820] [modloading-worker-0/INFO] [PluginManager/]: Scanning classes for titanium
+[262月2026 10:30:01.820] [modloading-worker-0/INFO] [PluginManager/]: Scanning classes for functionalstorage
+[262月2026 10:30:01.821] [modloading-worker-0/INFO] [net.neoforged.neoforge.common.NeoForgeMod/NEOFORGE-MOD]: NeoForge mod loading, version 21.1.219, for MC 1.21.1
+[262月2026 10:30:01.922] [modloading-worker-0/INFO] [com.simibubi.create.Create/]: Create 6.0.8 initializing! Commit hash: 5f1b407a97467157e7a0da0c560c7d1d5f378929
+[262月2026 10:30:01.953] [modloading-worker-0/INFO] [mezz.jei.library.load.PluginCaller/]: Sending ConfigManager...
+[262月2026 10:30:01.956] [modloading-worker-0/INFO] [mezz.jei.library.load.PluginCaller/]: Sending ConfigManager took 2.588 milliseconds
+[262月2026 10:30:02.007] [modloading-worker-0/INFO] [com.chinaex123.more_functionalstorage_upgrade.MoreFunctionalStorageUpgrade/]: Create mod detected, registering compatibility...
+[262月2026 10:30:05.280] [Render thread/INFO] [net.neoforged.neoforge.gametest.GameTestHooks/]: Enabled Gametest Namespaces: [more_functionalstorage_upgrade]
+[262月2026 10:30:05.695] [Render thread/INFO] [net.minecraft.server.packs.resources.ReloadableResourceManager/]: Reloading ResourceManager: vanilla, mod_resources, mod/titanium, mod/flywheel, mod/ponder, mod/create, mod/neoforge, mod/functionalstorage, mod/more_functionalstorage_upgrade, mod/jei
+[262月2026 10:30:05.775] [Worker-Main-8/INFO] [net.minecraft.client.gui.font.providers.UnihexProvider/]: Found unifont_all_no_pua-15.1.05.hex, loading
+[262月2026 10:30:05.889] [Worker-Main-1/INFO] [net.minecraft.client.gui.font.providers.UnihexProvider/]: Found unifont_jp_patch-15.1.05.hex, loading
+[262月2026 10:30:07.004] [Worker-Main-1/WARN] [net.minecraft.client.resources.model.BlockStateModelLoader/]: Exception loading blockstate definition: 'titanium:blockstates/block_test.json' missing model for variant: 'titanium:block_test#subfacing=west'
+[262月2026 10:30:07.004] [Worker-Main-1/WARN] [net.minecraft.client.resources.model.BlockStateModelLoader/]: Exception loading blockstate definition: 'titanium:blockstates/block_test.json' missing model for variant: 'titanium:block_test#subfacing=east'
+[262月2026 10:30:07.004] [Worker-Main-1/WARN] [net.minecraft.client.resources.model.BlockStateModelLoader/]: Exception loading blockstate definition: 'titanium:blockstates/block_test.json' missing model for variant: 'titanium:block_test#subfacing=north'
+[262月2026 10:30:07.004] [Worker-Main-1/WARN] [net.minecraft.client.resources.model.BlockStateModelLoader/]: Exception loading blockstate definition: 'titanium:blockstates/block_test.json' missing model for variant: 'titanium:block_test#subfacing=south'
+[262月2026 10:30:07.004] [Worker-Main-1/WARN] [net.minecraft.client.resources.model.BlockStateModelLoader/]: Exception loading blockstate definition: 'titanium:blockstates/block_twenty_four_test.json' missing model for variant: 'titanium:block_twenty_four_test#facing=down,subfacing=west'
+[262月2026 10:30:07.004] [Worker-Main-1/WARN] [net.minecraft.client.resources.model.BlockStateModelLoader/]: Exception loading blockstate definition: 'titanium:blockstates/block_twenty_four_test.json' missing model for variant: 'titanium:block_twenty_four_test#facing=east,subfacing=south'
+[262月2026 10:30:07.004] [Worker-Main-1/WARN] [net.minecraft.client.resources.model.BlockStateModelLoader/]: Exception loading blockstate definition: 'titanium:blockstates/block_twenty_four_test.json' missing model for variant: 'titanium:block_twenty_four_test#facing=up,subfacing=south'
+[262月2026 10:30:07.004] [Worker-Main-1/WARN] [net.minecraft.client.resources.model.BlockStateModelLoader/]: Exception loading blockstate definition: 'titanium:blockstates/block_twenty_four_test.json' missing model for variant: 'titanium:block_twenty_four_test#facing=south,subfacing=north'
+[262月2026 10:30:07.004] [Worker-Main-1/WARN] [net.minecraft.client.resources.model.BlockStateModelLoader/]: Exception loading blockstate definition: 'titanium:blockstates/block_twenty_four_test.json' missing model for variant: 'titanium:block_twenty_four_test#facing=up,subfacing=north'
+[262月2026 10:30:07.005] [Worker-Main-1/WARN] [net.minecraft.client.resources.model.BlockStateModelLoader/]: Exception loading blockstate definition: 'titanium:blockstates/block_twenty_four_test.json' missing model for variant: 'titanium:block_twenty_four_test#facing=east,subfacing=north'
+[262月2026 10:30:07.005] [Worker-Main-1/WARN] [net.minecraft.client.resources.model.BlockStateModelLoader/]: Exception loading blockstate definition: 'titanium:blockstates/block_twenty_four_test.json' missing model for variant: 'titanium:block_twenty_four_test#facing=south,subfacing=south'
+[262月2026 10:30:07.005] [Worker-Main-1/WARN] [net.minecraft.client.resources.model.BlockStateModelLoader/]: Exception loading blockstate definition: 'titanium:blockstates/block_twenty_four_test.json' missing model for variant: 'titanium:block_twenty_four_test#facing=west,subfacing=south'
+[262月2026 10:30:07.005] [Worker-Main-1/WARN] [net.minecraft.client.resources.model.BlockStateModelLoader/]: Exception loading blockstate definition: 'titanium:blockstates/block_twenty_four_test.json' missing model for variant: 'titanium:block_twenty_four_test#facing=west,subfacing=north'
+[262月2026 10:30:07.005] [Worker-Main-1/WARN] [net.minecraft.client.resources.model.BlockStateModelLoader/]: Exception loading blockstate definition: 'titanium:blockstates/block_twenty_four_test.json' missing model for variant: 'titanium:block_twenty_four_test#facing=west,subfacing=west'
+[262月2026 10:30:07.005] [Worker-Main-1/WARN] [net.minecraft.client.resources.model.BlockStateModelLoader/]: Exception loading blockstate definition: 'titanium:blockstates/block_twenty_four_test.json' missing model for variant: 'titanium:block_twenty_four_test#facing=down,subfacing=south'
+[262月2026 10:30:07.005] [Worker-Main-1/WARN] [net.minecraft.client.resources.model.BlockStateModelLoader/]: Exception loading blockstate definition: 'titanium:blockstates/block_twenty_four_test.json' missing model for variant: 'titanium:block_twenty_four_test#facing=north,subfacing=south'
+[262月2026 10:30:07.005] [Worker-Main-1/WARN] [net.minecraft.client.resources.model.BlockStateModelLoader/]: Exception loading blockstate definition: 'titanium:blockstates/block_twenty_four_test.json' missing model for variant: 'titanium:block_twenty_four_test#facing=north,subfacing=west'
+[262月2026 10:30:07.005] [Worker-Main-1/WARN] [net.minecraft.client.resources.model.BlockStateModelLoader/]: Exception loading blockstate definition: 'titanium:blockstates/block_twenty_four_test.json' missing model for variant: 'titanium:block_twenty_four_test#facing=west,subfacing=east'
+[262月2026 10:30:07.005] [Worker-Main-1/WARN] [net.minecraft.client.resources.model.BlockStateModelLoader/]: Exception loading blockstate definition: 'titanium:blockstates/block_twenty_four_test.json' missing model for variant: 'titanium:block_twenty_four_test#facing=north,subfacing=east'
+[262月2026 10:30:07.005] [Worker-Main-1/WARN] [net.minecraft.client.resources.model.BlockStateModelLoader/]: Exception loading blockstate definition: 'titanium:blockstates/block_twenty_four_test.json' missing model for variant: 'titanium:block_twenty_four_test#facing=north,subfacing=north'
+[262月2026 10:30:07.005] [Worker-Main-1/WARN] [net.minecraft.client.resources.model.BlockStateModelLoader/]: Exception loading blockstate definition: 'titanium:blockstates/block_twenty_four_test.json' missing model for variant: 'titanium:block_twenty_four_test#facing=south,subfacing=east'
+[262月2026 10:30:07.005] [Worker-Main-1/WARN] [net.minecraft.client.resources.model.BlockStateModelLoader/]: Exception loading blockstate definition: 'titanium:blockstates/block_twenty_four_test.json' missing model for variant: 'titanium:block_twenty_four_test#facing=up,subfacing=west'
+[262月2026 10:30:07.005] [Worker-Main-1/WARN] [net.minecraft.client.resources.model.BlockStateModelLoader/]: Exception loading blockstate definition: 'titanium:blockstates/block_twenty_four_test.json' missing model for variant: 'titanium:block_twenty_four_test#facing=east,subfacing=west'
+[262月2026 10:30:07.005] [Worker-Main-1/WARN] [net.minecraft.client.resources.model.BlockStateModelLoader/]: Exception loading blockstate definition: 'titanium:blockstates/block_twenty_four_test.json' missing model for variant: 'titanium:block_twenty_four_test#facing=east,subfacing=east'
+[262月2026 10:30:07.005] [Worker-Main-1/WARN] [net.minecraft.client.resources.model.BlockStateModelLoader/]: Exception loading blockstate definition: 'titanium:blockstates/block_twenty_four_test.json' missing model for variant: 'titanium:block_twenty_four_test#facing=down,subfacing=north'
+[262月2026 10:30:07.005] [Worker-Main-1/WARN] [net.minecraft.client.resources.model.BlockStateModelLoader/]: Exception loading blockstate definition: 'titanium:blockstates/block_twenty_four_test.json' missing model for variant: 'titanium:block_twenty_four_test#facing=down,subfacing=east'
+[262月2026 10:30:07.006] [Worker-Main-1/WARN] [net.minecraft.client.resources.model.BlockStateModelLoader/]: Exception loading blockstate definition: 'titanium:blockstates/block_twenty_four_test.json' missing model for variant: 'titanium:block_twenty_four_test#facing=up,subfacing=east'
+[262月2026 10:30:07.006] [Worker-Main-1/WARN] [net.minecraft.client.resources.model.BlockStateModelLoader/]: Exception loading blockstate definition: 'titanium:blockstates/block_twenty_four_test.json' missing model for variant: 'titanium:block_twenty_four_test#facing=south,subfacing=west'
+[262月2026 10:30:07.006] [Worker-Main-1/WARN] [net.minecraft.client.resources.model.BlockStateModelLoader/]: Exception loading blockstate definition: 'titanium:blockstates/block_asset_test.json' missing model for variant: 'titanium:block_asset_test#subfacing=north'
+[262月2026 10:30:07.006] [Worker-Main-1/WARN] [net.minecraft.client.resources.model.BlockStateModelLoader/]: Exception loading blockstate definition: 'titanium:blockstates/block_asset_test.json' missing model for variant: 'titanium:block_asset_test#subfacing=west'
+[262月2026 10:30:07.006] [Worker-Main-1/WARN] [net.minecraft.client.resources.model.BlockStateModelLoader/]: Exception loading blockstate definition: 'titanium:blockstates/block_asset_test.json' missing model for variant: 'titanium:block_asset_test#subfacing=east'
+[262月2026 10:30:07.006] [Worker-Main-1/WARN] [net.minecraft.client.resources.model.BlockStateModelLoader/]: Exception loading blockstate definition: 'titanium:blockstates/block_asset_test.json' missing model for variant: 'titanium:block_asset_test#subfacing=south'
+[262月2026 10:30:07.006] [Worker-Main-1/WARN] [net.minecraft.client.resources.model.BlockStateModelLoader/]: Exception loading blockstate definition: 'titanium:blockstates/machine_test.json' missing model for variant: 'titanium:machine_test#'
+[262月2026 10:30:07.006] [Worker-Main-1/WARN] [net.minecraft.client.resources.model.BlockStateModelLoader/]: Exception loading blockstate definition: 'titanium:blockstates/creative_generator.json' missing model for variant: 'titanium:creative_generator#'
+[262月2026 10:30:07.341] [Worker-Main-1/WARN] [net.minecraft.client.resources.model.ModelBakery/]: Unable to load model: 'titanium:item/creative_generator' referenced from: titanium:item/creative_generator: java.io.FileNotFoundException: titanium:models/item/creative_generator.json
+[262月2026 10:30:07.341] [Worker-Main-1/WARN] [net.minecraft.client.resources.model.ModelBakery/]: Unable to load model: 'titanium:item/block_test' referenced from: titanium:item/block_test: java.io.FileNotFoundException: titanium:models/item/block_test.json
+[262月2026 10:30:07.342] [Worker-Main-1/WARN] [net.minecraft.client.resources.model.ModelBakery/]: Unable to load model: 'titanium:item/block_asset_test' referenced from: titanium:item/block_asset_test: java.io.FileNotFoundException: titanium:models/item/block_asset_test.json
+[262月2026 10:30:07.343] [Worker-Main-1/WARN] [net.minecraft.client.resources.model.ModelBakery/]: Unable to load model: 'titanium:item/machine_test' referenced from: titanium:item/machine_test: java.io.FileNotFoundException: titanium:models/item/machine_test.json
+[262月2026 10:30:07.344] [Worker-Main-1/WARN] [net.minecraft.client.resources.model.ModelBakery/]: Unable to load model: 'titanium:item/block_twenty_four_test' referenced from: titanium:item/block_twenty_four_test: java.io.FileNotFoundException: titanium:models/item/block_twenty_four_test.json
+[262月2026 10:30:08.636] [Worker-Main-5/INFO] [PonderIndex/]: Registering Ponder Scenes took 65.08 ms
+[262月2026 10:30:08.643] [Worker-Main-5/INFO] [PonderIndex/]: Registering Ponder Tags took 6.342 ms
+[262月2026 10:30:08.787] [Render thread/WARN] [net.minecraft.client.sounds.SoundEngine/]: Missing sound for event: minecraft:item.goat_horn.play
+[262月2026 10:30:08.788] [Render thread/WARN] [net.minecraft.client.sounds.SoundEngine/]: Missing sound for event: minecraft:entity.goat.screaming.horn_break
+[262月2026 10:30:09.896] [Render thread/INFO] [com.mojang.blaze3d.audio.Library/]: OpenAL initialized on device OpenAL Soft on 扬声器/听筒 (Realtek(R) Audio)
+[262月2026 10:30:09.896] [Render thread/INFO] [net.minecraft.client.sounds.SoundEngine/SOUNDS]: Sound engine started
+[262月2026 10:30:10.029] [Render thread/INFO] [net.minecraft.client.renderer.texture.TextureAtlas/]: Created: 2048x1024x4 minecraft:textures/atlas/blocks.png-atlas
+[262月2026 10:30:11.243] [Render thread/INFO] [net.minecraft.client.renderer.texture.TextureAtlas/]: Created: 256x256x4 minecraft:textures/atlas/signs.png-atlas
+[262月2026 10:30:11.247] [Render thread/INFO] [net.minecraft.client.renderer.texture.TextureAtlas/]: Created: 512x512x4 minecraft:textures/atlas/shield_patterns.png-atlas
+[262月2026 10:30:11.324] [Render thread/INFO] [net.minecraft.client.renderer.texture.TextureAtlas/]: Created: 512x512x4 minecraft:textures/atlas/banner_patterns.png-atlas
+[262月2026 10:30:11.593] [Render thread/INFO] [net.minecraft.client.renderer.texture.TextureAtlas/]: Created: 2048x1024x4 minecraft:textures/atlas/armor_trims.png-atlas
+[262月2026 10:30:18.859] [Render thread/INFO] [net.minecraft.client.renderer.texture.TextureAtlas/]: Created: 128x64x4 minecraft:textures/atlas/decorated_pot.png-atlas
+[262月2026 10:30:19.089] [Render thread/INFO] [net.minecraft.client.renderer.texture.TextureAtlas/]: Created: 256x256x4 minecraft:textures/atlas/chest.png-atlas
+[262月2026 10:30:19.190] [Render thread/INFO] [net.minecraft.client.renderer.texture.TextureAtlas/]: Created: 512x256x4 minecraft:textures/atlas/shulker_boxes.png-atlas
+[262月2026 10:30:19.361] [Render thread/INFO] [net.minecraft.client.renderer.texture.TextureAtlas/]: Created: 512x256x4 minecraft:textures/atlas/beds.png-atlas
+[262月2026 10:30:19.586] [Render thread/INFO] [net.minecraft.client.renderer.texture.TextureAtlas/]: Created: 512x256x0 minecraft:textures/atlas/particles.png-atlas
+[262月2026 10:30:20.183] [Render thread/INFO] [net.minecraft.client.renderer.texture.TextureAtlas/]: Created: 512x256x0 minecraft:textures/atlas/paintings.png-atlas
+[262月2026 10:30:20.281] [Render thread/INFO] [net.minecraft.client.renderer.texture.TextureAtlas/]: Created: 256x128x0 minecraft:textures/atlas/mob_effects.png-atlas
+[262月2026 10:30:20.354] [Render thread/INFO] [net.minecraft.client.renderer.texture.TextureAtlas/]: Created: 64x64x0 minecraft:textures/atlas/map_decorations.png-atlas
+[262月2026 10:30:20.424] [Render thread/INFO] [net.minecraft.client.renderer.texture.TextureAtlas/]: Created: 1024x512x0 minecraft:textures/atlas/gui.png-atlas
+[262月2026 10:30:21.483] [Render thread/WARN] [net.minecraft.client.renderer.ShaderInstance/]: Shader rendertype_entity_translucent_emissive could not find sampler named Sampler2 in the specified shader program.
+[262月2026 10:30:22.172] [Render thread/INFO] [flywheel/backend/shaders/]: Loaded 77 shader sources in 26.622 ms
+[262月2026 10:30:22.205] [Render thread/INFO] [com.simibubi.create.Create/]: Loaded 58 train hat configurations.
+[262月2026 10:30:22.206] [Render thread/INFO] [net.neoforged.neoforge.client.entity.animation.json.AnimationLoader/]: Loaded 0 entity animations
+[262月2026 10:30:22.206] [Render thread/INFO] [net.minecraft.client.renderer.texture.TextureAtlas/]: Created: 256x256x0 jei:textures/atlas/gui.png-atlas
+[262月2026 10:30:31.574] [Render thread/WARN] [net.neoforged.neoforge.common.CommonHooks/WP]: The following mods have version differences that were not resolved:
+more_functionalstorage_upgrade (version 1.2.1-mc1.21.1-neoforge -> 1.2.2-mc1.21.1-neoforge)
+Things may not work well.
+[262月2026 10:30:31.644] [Render thread/INFO] [com.simibubi.create.Create/]: Created 157 recipes which will be injected into the game
+[262月2026 10:30:31.648] [Render thread/INFO] [com.simibubi.create.Create/]: Created 0 tags which will be injected into the game
+[262月2026 10:30:32.661] [Render thread/INFO] [net.minecraft.world.item.crafting.RecipeManager/]: Loaded 2975 recipes
+[262月2026 10:30:32.931] [Render thread/INFO] [net.minecraft.advancements.AdvancementTree/]: Loaded 2659 advancements
+[262月2026 10:30:34.063] [Server thread/INFO] [net.minecraft.client.server.IntegratedServer/]: Starting integrated minecraft server version 1.21.1
+[262月2026 10:30:34.063] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Generating keypair
+[262月2026 10:30:34.374] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Preparing start region for dimension minecraft:overworld
+[262月2026 10:30:34.582] [progressListener/INFO] [net.minecraft.server.level.progress.LoggerChunkProgressListener/]: 准备生成区域中：0%
+[262月2026 10:30:34.645] [Server thread/INFO] [net.neoforged.neoforge.server.permission.PermissionAPI/]: Successfully initialized permission handler neoforge:default_handler
+[262月2026 10:30:34.659] [progressListener/INFO] [net.minecraft.server.level.progress.LoggerChunkProgressListener/]: Time elapsed: 282 ms
+[262月2026 10:30:34.684] [Server thread/INFO] [net.minecraft.client.server.IntegratedServer/]: Changing view distance to 12, from 10
+[262月2026 10:30:34.684] [Server thread/INFO] [net.minecraft.client.server.IntegratedServer/]: Changing simulation distance to 12, from 0
+[262月2026 10:30:35.116] [Render thread/INFO] [com.simibubi.create.Create/]: Created 157 recipes which will be injected into the game
+[262月2026 10:30:35.119] [Render thread/INFO] [com.simibubi.create.Create/]: Created 0 tags which will be injected into the game
+[262月2026 10:30:35.444] [Server thread/INFO] [net.minecraft.server.players.PlayerList/]: Dev[local:E:31bb232f] logged in with entity id 1 at (5.537740608386868, -60.0, 5.498807171875139)
+[262月2026 10:30:35.494] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Dev加入了游戏
+[262月2026 10:30:35.595] [Render thread/INFO] [flywheel/]: Started 6 worker threads
+[262月2026 10:30:35.816] [Render thread/INFO] [mezz.jei.core.util.LoggedTimer/]: Starting JEI...
+[262月2026 10:30:35.825] [Render thread/INFO] [mezz.jei.library.load.PluginCaller/]: Registering item subtypes...
+[262月2026 10:30:35.832] [Render thread/INFO] [mezz.jei.library.load.PluginCaller/]: Registering item subtypes took 6.472 milliseconds
+[262月2026 10:30:35.832] [Render thread/INFO] [mezz.jei.library.load.PluginCaller/]: Registering fluid subtypes...
+[262月2026 10:30:35.835] [Render thread/INFO] [mezz.jei.library.load.PluginCaller/]: Registering fluid subtypes took 2.324 milliseconds
+[262月2026 10:30:35.837] [Render thread/INFO] [mezz.jei.library.load.PluginCaller/]: Registering ingredients...
+[262月2026 10:30:36.006] [Render thread/INFO] [mezz.jei.library.load.PluginCallerTimerRunnable/]: Registering ingredients: jei:minecraft took 168.5 milliseconds
+[262月2026 10:30:36.007] [Render thread/INFO] [mezz.jei.library.load.PluginCaller/]: Registering ingredients took 169.5 milliseconds
+[262月2026 10:30:36.007] [Render thread/INFO] [mezz.jei.library.load.PluginCaller/]: Registering extra ingredients...
+[262月2026 10:30:36.012] [Render thread/INFO] [mezz.jei.library.load.PluginCaller/]: Registering extra ingredients took 5.163 milliseconds
+[262月2026 10:30:36.013] [Render thread/INFO] [mezz.jei.library.load.PluginCaller/]: Registering search ingredient aliases...
+[262月2026 10:30:36.014] [Render thread/INFO] [mezz.jei.library.load.PluginCaller/]: Registering search ingredient aliases took 1.227 milliseconds
+[262月2026 10:30:36.031] [Render thread/INFO] [mezz.jei.library.load.PluginCaller/]: Registering Mod Info...
+[262月2026 10:30:36.032] [Render thread/INFO] [mezz.jei.library.load.PluginCaller/]: Registering Mod Info took 944.3 microseconds
+[262月2026 10:30:36.048] [Render thread/INFO] [mezz.jei.library.load.PluginCaller/]: Registering categories...
+[262月2026 10:30:36.061] [Render thread/INFO] [mezz.jei.library.load.PluginCallerTimerRunnable/]: Registering categories: jei:minecraft took 13.27 milliseconds
+[262月2026 10:30:36.108] [Render thread/INFO] [mezz.jei.library.load.PluginCallerTimerRunnable/]: Registering categories: create:jei_plugin took 46.35 milliseconds
+[262月2026 10:30:36.114] [Render thread/INFO] [mezz.jei.library.load.PluginCaller/]: Registering categories took 66.27 milliseconds
+[262月2026 10:30:36.115] [Render thread/INFO] [mezz.jei.library.load.PluginCaller/]: Registering vanilla category extensions...
+[262月2026 10:30:36.119] [Render thread/INFO] [mezz.jei.library.load.PluginCaller/]: Registering vanilla category extensions took 3.273 milliseconds
+[262月2026 10:30:36.120] [Render thread/INFO] [mezz.jei.library.load.PluginCaller/]: Registering recipe catalysts...
+[262月2026 10:30:36.123] [Render thread/INFO] [mezz.jei.library.load.PluginCaller/]: Registering recipe catalysts took 2.897 milliseconds
+[262月2026 10:30:36.124] [Render thread/INFO] [mezz.jei.core.util.LoggedTimer/]: Building recipe registry...
+[262月2026 10:30:36.142] [Render thread/INFO] [mezz.jei.core.util.LoggedTimer/]: Building recipe registry took 17.64 milliseconds
+[262月2026 10:30:36.144] [Render thread/INFO] [mezz.jei.library.load.PluginCaller/]: Registering advanced plugins...
+[262月2026 10:30:36.145] [Render thread/INFO] [mezz.jei.library.load.PluginCaller/]: Registering advanced plugins took 816.6 microseconds
+[262月2026 10:30:36.146] [Render thread/INFO] [mezz.jei.library.load.PluginCaller/]: Registering recipes...
+[262月2026 10:30:36.459] [Render thread/INFO] [mezz.jei.library.load.PluginCallerTimerRunnable/]: Registering recipes: jei:minecraft took 312.5 milliseconds
+[262月2026 10:30:36.586] [Render thread/INFO] [mezz.jei.library.load.PluginCallerTimerRunnable/]: Registering recipes: create:jei_plugin took 126.7 milliseconds
+[262月2026 10:30:36.632] [Render thread/INFO] [mezz.jei.library.load.PluginCallerTimerRunnable/]: Registering recipes: jei:internal took 43.60 milliseconds
+[262月2026 10:30:36.632] [Render thread/INFO] [mezz.jei.library.load.PluginCaller/]: Registering recipes took 485.4 milliseconds
+[262月2026 10:30:36.641] [Render thread/INFO] [mezz.jei.library.load.PluginCaller/]: Registering recipes transfer handlers...
+[262月2026 10:30:36.646] [Render thread/INFO] [mezz.jei.library.load.PluginCaller/]: Registering recipes transfer handlers took 4.960 milliseconds
+[262月2026 10:30:36.651] [Render thread/INFO] [mezz.jei.core.util.LoggedTimer/]: Building runtime...
+[262月2026 10:30:36.656] [Render thread/INFO] [mezz.jei.library.load.PluginCaller/]: Registering gui handlers...
+[262月2026 10:30:36.667] [Render thread/INFO] [mezz.jei.library.load.PluginCaller/]: Registering gui handlers took 10.68 milliseconds
+[262月2026 10:30:36.672] [Render thread/INFO] [mezz.jei.library.load.PluginCaller/]: Registering Runtime...
+[262月2026 10:30:36.675] [Render thread/INFO] [mezz.jei.gui.startup.JeiGuiStarter/]: Starting JEI GUI
+[262月2026 10:30:36.676] [Render thread/INFO] [mezz.jei.core.util.LoggedTimer/]: Building ingredient list...
+[262月2026 10:30:36.715] [Render thread/INFO] [mezz.jei.core.util.LoggedTimer/]: Building ingredient list took 39.35 milliseconds
+[262月2026 10:30:36.715] [Render thread/INFO] [mezz.jei.core.util.LoggedTimer/]: Building ingredient filter...
+[262月2026 10:30:36.756] [Render thread/INFO] [mezz.jei.gui.ingredients.IngredientFilter/]: Adding 2560 ingredients
+[262月2026 10:30:37.183] [Render thread/INFO] [mezz.jei.gui.ingredients.IngredientFilter/]: Added 2560 ingredients
+[262月2026 10:30:37.184] [Render thread/INFO] [mezz.jei.core.util.LoggedTimer/]: Building ingredient filter took 468.6 milliseconds
+[262月2026 10:30:37.274] [Render thread/INFO] [mezz.jei.library.load.PluginCallerTimerRunnable/]: Registering Runtime: jei:neoforge_gui took 600.3 milliseconds
+[262月2026 10:30:37.274] [Render thread/INFO] [mezz.jei.library.load.PluginCaller/]: Registering Runtime took 601.3 milliseconds
+[262月2026 10:30:37.275] [Render thread/INFO] [mezz.jei.core.util.LoggedTimer/]: Building runtime took 623.3 milliseconds
+[262月2026 10:30:37.275] [Render thread/INFO] [mezz.jei.library.load.PluginCaller/]: Sending Runtime...
+[262月2026 10:30:37.275] [Render thread/INFO] [mezz.jei.library.load.PluginCaller/]: Sending Runtime took 465.0 microseconds
+[262月2026 10:30:37.276] [Render thread/INFO] [mezz.jei.core.util.LoggedTimer/]: Starting JEI took 1.459 seconds
+[262月2026 10:30:37.285] [Render thread/INFO] [net.minecraft.advancements.AdvancementTree/]: Loaded 214 advancements
+[262月2026 10:30:44.099] [Server thread/INFO] [net.minecraft.client.server.IntegratedServer/]: Saving and pausing game...
+[262月2026 10:30:44.206] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[新的世界]'/minecraft:overworld
+[262月2026 10:30:44.216] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[新的世界]'/minecraft:the_nether
+[262月2026 10:30:44.216] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[新的世界]'/minecraft:the_end
+[262月2026 10:30:45.509] [Render thread/INFO] [mezz.jei.library.startup.JeiStarter/]: Stopping JEI
+[262月2026 10:30:45.509] [Render thread/INFO] [mezz.jei.library.load.PluginCaller/]: Sending Runtime Unavailable...
+[262月2026 10:30:45.509] [Render thread/INFO] [mezz.jei.neoforge.plugins.neoforge.NeoForgeGuiPlugin/]: Stopping JEI GUI
+[262月2026 10:30:45.510] [Render thread/INFO] [mezz.jei.library.load.PluginCaller/]: Sending Runtime Unavailable took 1.147 milliseconds
+[262月2026 10:30:45.553] [Server thread/INFO] [net.minecraft.server.network.ServerGamePacketListenerImpl/]: Dev lost connection: 连接中断
+[262月2026 10:30:45.553] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Dev退出了游戏
+[262月2026 10:30:45.616] [Server thread/INFO] [net.minecraft.server.network.ServerCommonPacketListenerImpl/]: Stopping singleplayer server as player logged out
+[262月2026 10:30:45.647] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Stopping server
+[262月2026 10:30:45.648] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving players
+[262月2026 10:30:45.648] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving worlds
+[262月2026 10:30:45.794] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[新的世界]'/minecraft:overworld
+[262月2026 10:30:45.929] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[新的世界]'/minecraft:the_nether
+[262月2026 10:30:45.987] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[新的世界]'/minecraft:the_end
+[262月2026 10:30:46.077] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: ThreadedAnvilChunkStorage (新的世界): All chunks are saved
+[262月2026 10:30:46.077] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: ThreadedAnvilChunkStorage (DIM-1): All chunks are saved
+[262月2026 10:30:46.077] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: ThreadedAnvilChunkStorage (DIM1): All chunks are saved
+[262月2026 10:30:46.077] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: ThreadedAnvilChunkStorage: All dimensions are saved
+[262月2026 10:30:46.988] [Render thread/INFO] [net.minecraft.client.Minecraft/]: Stopping!
