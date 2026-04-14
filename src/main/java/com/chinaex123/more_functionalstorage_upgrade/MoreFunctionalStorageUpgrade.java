@@ -30,11 +30,9 @@ public class MoreFunctionalStorageUpgrade {
     public static final Logger LOGGER = LogUtils.getLogger();
 
     public MoreFunctionalStorageUpgrade(IEventBus modEventBus, ModContainer modContainer) {
-        modEventBus.addListener(this::registerBehaviors); // 添加行为注册监听器
-        NeoForge.EVENT_BUS.register(this);
+        modEventBus.addListener(this::registerBehaviors);
 
         ModCreativeTabs.register(modEventBus);
-
         CustomUpgradeItem.register(modEventBus);
         ModItems.register(modEventBus);
 
