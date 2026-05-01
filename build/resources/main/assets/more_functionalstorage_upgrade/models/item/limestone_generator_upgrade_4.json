@@ -1,6 +1,0 @@
-{
-  "parent": "minecraft:item/generated",
-  "textures": {
-    "layer0": "more_functionalstorage_upgrade:item/limestone_generator_upgrade_4"
-  }
-}

@@ -1,4 +1,0 @@
-/time set 0
-/give Dev create:honey_bucket
-/give Dev more_functionalstorage_upgrade:storage_upgrade_smithing_template
-/time set 0
