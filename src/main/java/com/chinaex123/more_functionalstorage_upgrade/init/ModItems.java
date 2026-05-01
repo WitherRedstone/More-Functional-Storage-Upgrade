@@ -1,4 +1,4 @@
-package com.chinaex123.more_functionalstorage_upgrade.register.Item;
+package com.chinaex123.more_functionalstorage_upgrade.init;
 
 import com.chinaex123.more_functionalstorage_upgrade.MoreFunctionalStorageUpgrade;
 import net.minecraft.ChatFormatting;

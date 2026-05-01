@@ -1,4 +1,4 @@
-package com.chinaex123.more_functionalstorage_upgrade.register.Fluid;
+package com.chinaex123.more_functionalstorage_upgrade.init.Fluid;
 
 import com.buuz135.functionalstorage.block.tile.ControllableDrawerTile;
 import com.buuz135.functionalstorage.item.component.FunctionalUpgradeBehavior;

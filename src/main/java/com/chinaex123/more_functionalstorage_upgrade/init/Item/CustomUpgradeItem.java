@@ -1,11 +1,11 @@
-package com.chinaex123.more_functionalstorage_upgrade.register.Item;
+package com.chinaex123.more_functionalstorage_upgrade.init.Item;
 
 import com.buuz135.functionalstorage.item.FSAttachments;
 import com.buuz135.functionalstorage.item.FSItem;
 import com.buuz135.functionalstorage.item.component.ExecuteEveryBehavior;
 import com.chinaex123.more_functionalstorage_upgrade.MoreFunctionalStorageUpgrade;
-import com.chinaex123.more_functionalstorage_upgrade.register.Fluid.ConfigFluidGeneration;
-import com.chinaex123.more_functionalstorage_upgrade.register.MoreUpgradeItem;
+import com.chinaex123.more_functionalstorage_upgrade.init.Fluid.ConfigFluidGeneration;
+import com.chinaex123.more_functionalstorage_upgrade.init.MoreUpgradeItem;
 import net.minecraft.core.registries.BuiltInRegistries;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.item.Item;

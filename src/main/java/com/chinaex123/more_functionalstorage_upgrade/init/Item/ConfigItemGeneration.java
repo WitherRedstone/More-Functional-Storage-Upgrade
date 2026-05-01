@@ -1,4 +1,4 @@
-package com.chinaex123.more_functionalstorage_upgrade.register.Item;
+package com.chinaex123.more_functionalstorage_upgrade.init.Item;
 
 import com.buuz135.functionalstorage.block.tile.ControllableDrawerTile;
 import com.buuz135.functionalstorage.item.component.FunctionalUpgradeBehavior;
@@ -50,17 +50,11 @@ public record ConfigItemGeneration(ItemStack item, int amountPerTick, int interv
             return;
         }
 
-        MoreFunctionalStorageUpgrade.LOGGER.info("Generating item: {} x{}",
-                item.getItem(), item.getCount());
-
         // 准备要生成的物品堆栈
         ItemStack itemToGenerate = item.copy();
         if (amountPerTick > 1 && itemToGenerate.getMaxStackSize() > 1) {
             itemToGenerate.setCount(Math.min(amountPerTick, itemToGenerate.getMaxStackSize()));
         }
-
-        MoreFunctionalStorageUpgrade.LOGGER.info("Item to generate: {} x{}",
-                itemToGenerate.getItem(), itemToGenerate.getCount());
 
         // 首先检查抽屉本身是否有物品处理能力
         var drawerCapability = level.getCapability(Capabilities.ItemHandler.BLOCK, pos, null);

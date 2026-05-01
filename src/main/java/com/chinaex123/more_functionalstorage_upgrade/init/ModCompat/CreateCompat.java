@@ -1,20 +1,18 @@
-package com.chinaex123.more_functionalstorage_upgrade.register.ModCompat;
+package com.chinaex123.more_functionalstorage_upgrade.init.ModCompat;
 
 import com.buuz135.functionalstorage.item.FSAttachments;
 import com.buuz135.functionalstorage.item.FSItem;
 import com.buuz135.functionalstorage.item.component.ExecuteEveryBehavior;
-import com.chinaex123.more_functionalstorage_upgrade.register.Fluid.ConfigFluidGeneration;
-import com.chinaex123.more_functionalstorage_upgrade.register.Item.ConfigItemGeneration;
+import com.chinaex123.more_functionalstorage_upgrade.init.Fluid.ConfigFluidGeneration;
+import com.chinaex123.more_functionalstorage_upgrade.init.Item.ConfigItemGeneration;
 import net.minecraft.core.registries.BuiltInRegistries;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.item.Item;
-import net.minecraft.world.item.ItemStack;
-import net.minecraft.world.item.Items;
 import net.neoforged.fml.ModList;
 import net.neoforged.neoforge.fluids.FluidStack;
 import net.neoforged.neoforge.registries.DeferredItem;
 
-import static com.chinaex123.more_functionalstorage_upgrade.register.Item.CustomUpgradeItem.ITEMS;
+import static com.chinaex123.more_functionalstorage_upgrade.init.Item.CustomUpgradeItem.ITEMS;
 
 public class CreateCompat {
 

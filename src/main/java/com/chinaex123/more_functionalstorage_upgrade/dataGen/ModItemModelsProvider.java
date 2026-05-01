@@ -1,9 +1,9 @@
 package com.chinaex123.more_functionalstorage_upgrade.dataGen;
 
 import com.chinaex123.more_functionalstorage_upgrade.MoreFunctionalStorageUpgrade;
-import com.chinaex123.more_functionalstorage_upgrade.register.Item.CustomUpgradeItem;
-import com.chinaex123.more_functionalstorage_upgrade.register.Item.ModItems;
-import com.chinaex123.more_functionalstorage_upgrade.register.ModCompat.CreateCompat;
+import com.chinaex123.more_functionalstorage_upgrade.init.Item.CustomUpgradeItem;
+import com.chinaex123.more_functionalstorage_upgrade.init.ModItems;
+import com.chinaex123.more_functionalstorage_upgrade.init.ModCompat.CreateCompat;
 import net.minecraft.data.PackOutput;
 import net.neoforged.fml.ModList;
 import net.neoforged.neoforge.client.model.generators.ItemModelProvider;

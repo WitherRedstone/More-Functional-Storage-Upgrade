@@ -1,4 +1,4 @@
-package com.chinaex123.more_functionalstorage_upgrade.register;
+package com.chinaex123.more_functionalstorage_upgrade.init;
 
 import com.buuz135.functionalstorage.item.UpgradeItem;
 import com.buuz135.functionalstorage.item.FSAttachments;

@@ -1,9 +1,8 @@
-package com.chinaex123.more_functionalstorage_upgrade.register;
+package com.chinaex123.more_functionalstorage_upgrade.init;
 
 import com.chinaex123.more_functionalstorage_upgrade.MoreFunctionalStorageUpgrade;
-import com.chinaex123.more_functionalstorage_upgrade.register.Item.CustomUpgradeItem;
-import com.chinaex123.more_functionalstorage_upgrade.register.Item.ModItems;
-import com.chinaex123.more_functionalstorage_upgrade.register.ModCompat.CreateCompat;
+import com.chinaex123.more_functionalstorage_upgrade.init.Item.CustomUpgradeItem;
+import com.chinaex123.more_functionalstorage_upgrade.init.ModCompat.CreateCompat;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.network.chat.Component;
 import net.minecraft.world.item.CreativeModeTab;
