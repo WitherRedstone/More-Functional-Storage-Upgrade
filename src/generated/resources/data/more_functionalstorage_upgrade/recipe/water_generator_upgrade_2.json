@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "A": {
+      "item": "more_functionalstorage_upgrade:water_generator_upgrade_1"
+    },
+    "B": {
+      "tag": "c:ingots/gold"
+    },
+    "C": {
+      "tag": "c:storage_blocks/gold"
+    }
+  },
+  "pattern": [
+    "BCB",
+    "BAB",
+    "BCB"
+  ],
+  "result": {
+    "count": 1,
+    "id": "more_functionalstorage_upgrade:water_generator_upgrade_2"
+  }
+}

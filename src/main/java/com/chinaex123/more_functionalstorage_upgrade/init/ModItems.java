@@ -17,6 +17,7 @@ public interface ModItems {
     ResourceLocation EMPTY_SLOT_GENERATOR_UPGRADE = ResourceLocation.fromNamespaceAndPath(MoreFunctionalStorageUpgrade.MOD_ID, "item/empty_slot_generator_upgrade");
     ResourceLocation EMPTY_SLOT_HEART_OF_THE_SEA = ResourceLocation.fromNamespaceAndPath(MoreFunctionalStorageUpgrade.MOD_ID, "item/empty_slot_heart_of_the_sea");
 
+    /** 海洋之心锻造模板 */
     DeferredItem<SmithingTemplateItem> GENERATOR_UPGRADE_SMITHING_TEMPLATE =
             ITEMS_REGISTER.register("generator_upgrade_smithing_template",
                     () -> new SmithingTemplateItem(

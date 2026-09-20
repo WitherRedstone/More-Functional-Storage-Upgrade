@@ -34,9 +34,6 @@ public class CreateUpgradeItem {
 
     /**
      * 根据流体 ID 和数量创建流体堆栈。
-     * <p>
-     * 此方法从内置注册表中获取指定 ID 的流体，并创建包含指定数量的流体堆栈。
-     * 主要用于创建机械动力模组的流体生成升级物品。
      *
      * @param fluidId 流体的资源位置标识符
      * @param amount  流体的数量（毫桶）
@@ -92,7 +89,6 @@ public class CreateUpgradeItem {
             () -> createItemGenerator("create:asurine", 64, 5));
     public static final DeferredItem<Item> ASURINE_GENERATOR_UPGRADE_5 = ITEMS.register("asurine_generator_upgrade_5",
             () -> createItemGenerator("create:asurine", 64, 1));
-
     // 绯红岩生成升级
     public static final DeferredItem<Item> CRIMSITE_GENERATOR_UPGRADE_1 = ITEMS.register("crimsite_generator_upgrade_1",
             () -> createItemGenerator("create:crimsite", 8, 20));
@@ -104,7 +100,6 @@ public class CreateUpgradeItem {
             () -> createItemGenerator("create:crimsite", 64, 5));
     public static final DeferredItem<Item> CRIMSITE_GENERATOR_UPGRADE_5 = ITEMS.register("crimsite_generator_upgrade_5",
             () -> createItemGenerator("create:crimsite", 64, 1));
-
     // 赭金砂生成升级
     public static final DeferredItem<Item> OCHRUM_GENERATOR_UPGRADE_1 = ITEMS.register("ochrum_generator_upgrade_1",
             () -> createItemGenerator("create:ochrum", 8, 20));
@@ -116,7 +111,6 @@ public class CreateUpgradeItem {
             () -> createItemGenerator("create:ochrum", 64, 5));
     public static final DeferredItem<Item> OCHRUM_GENERATOR_UPGRADE_5 = ITEMS.register("ochrum_generator_upgrade_5",
             () -> createItemGenerator("create:ochrum", 64, 1));
-
     // 辉绿岩生成升级
     public static final DeferredItem<Item> VERIDIUM_GENERATOR_UPGRADE_1 = ITEMS.register("veridium_generator_upgrade_1",
             () -> createItemGenerator("create:veridium", 8, 20));
@@ -128,7 +122,6 @@ public class CreateUpgradeItem {
             () -> createItemGenerator("create:veridium", 64, 5));
     public static final DeferredItem<Item> VERIDIUM_GENERATOR_UPGRADE_5 = ITEMS.register("veridium_generator_upgrade_5",
             () -> createItemGenerator("create:veridium", 64, 1));
-
     // 石灰岩生成升级
     public static final DeferredItem<Item> LIMESTONE_GENERATOR_UPGRADE_1 = ITEMS.register("limestone_generator_upgrade_1",
             () -> createItemGenerator("create:limestone", 8, 20));
@@ -140,6 +133,19 @@ public class CreateUpgradeItem {
             () -> createItemGenerator("create:limestone", 64, 5));
     public static final DeferredItem<Item> LIMESTONE_GENERATOR_UPGRADE_5 = ITEMS.register("limestone_generator_upgrade_5",
             () -> createItemGenerator("create:limestone", 64, 1));
+    // 熔渣生成升级
+    public static final DeferredItem<Item> SCORIA_GENERATOR_UPGRADE_1 = ITEMS.register("scoria_generator_upgrade_1",
+            () -> createItemGenerator("create:scoria", 8, 20));
+    public static final DeferredItem<Item> SCORIA_GENERATOR_UPGRADE_2 = ITEMS.register("scoria_generator_upgrade_2",
+            () -> createItemGenerator("create:scoria", 16, 15));
+    public static final DeferredItem<Item> SCORIA_GENERATOR_UPGRADE_3 = ITEMS.register("scoria_generator_upgrade_3",
+            () -> createItemGenerator("create:scoria", 32, 10));
+    public static final DeferredItem<Item> SCORIA_GENERATOR_UPGRADE_4 = ITEMS.register("scoria_generator_upgrade_4",
+            () -> createItemGenerator("create:scoria", 64, 5));
+    public static final DeferredItem<Item> SCORIA_GENERATOR_UPGRADE_5 = ITEMS.register("scoria_generator_upgrade_5",
+            () -> createItemGenerator("create:scoria", 64, 1));
+
+    // ==================== 流体功能升级 ====================
 
     // 蜂蜜生成升级
     public static final DeferredItem<Item> HONEY_GENERATOR_UPGRADE_1 = ITEMS.register("honey_generator_upgrade_1",

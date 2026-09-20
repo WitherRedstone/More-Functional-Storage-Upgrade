@@ -1,6 +1,7 @@
 package com.chinaex123.more_functionalstorage_upgrade.data;
 
 import com.chinaex123.more_functionalstorage_upgrade.MoreFunctionalStorageUpgrade;
+import com.chinaex123.more_functionalstorage_upgrade.data.recipes.ModRecipesProvider;
 import net.minecraft.core.HolderLookup;
 import net.minecraft.data.DataGenerator;
 import net.minecraft.data.PackOutput;
@@ -18,10 +19,7 @@ public class ModDataGenerator {
         PackOutput packOutput = generator.getPackOutput();
         CompletableFuture<HolderLookup.Provider> lookupProvider = event.getLookupProvider();
 
-        // 注册配方生成器
         generator.addProvider(event.includeServer(), new ModRecipesProvider(packOutput, lookupProvider));
-        // 注册物品模型生成器
         generator.addProvider(event.includeClient(), new ModItemModelsProvider(packOutput, event.getExistingFileHelper()));
-
     }
 }

@@ -2,6 +2,7 @@ package com.chinaex123.more_functionalstorage_upgrade;
 
 import com.buuz135.functionalstorage.item.component.FunctionalUpgradeBehavior;
 import com.chinaex123.more_functionalstorage_upgrade.init.integrations.CreateUpgradeItem;
+import com.chinaex123.more_functionalstorage_upgrade.init.integrations.ForbiddenArcanusUpgradeItem;
 import com.chinaex123.more_functionalstorage_upgrade.upgrade_behavior.ConfigItemGeneration;
 import com.chinaex123.more_functionalstorage_upgrade.init.CustomUpgradeItem;
 import com.chinaex123.more_functionalstorage_upgrade.upgrade_behavior.ConfigFluidGeneration;
@@ -33,6 +34,10 @@ public class MoreFunctionalStorageUpgrade {
         // 模组兼容 - 机械动力
         if (ModList.get().isLoaded("create")) {
             CreateUpgradeItem.register();
+        }
+        // 模组兼容 - 禁忌与奥秘
+        if (ModList.get().isLoaded("forbidden_arcanus")) {
+            ForbiddenArcanusUpgradeItem.register();
         }
     }
 

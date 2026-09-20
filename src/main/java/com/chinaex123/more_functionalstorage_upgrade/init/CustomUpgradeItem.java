@@ -34,7 +34,7 @@ public class CustomUpgradeItem {
      *
      * @param itemToGenerate 要生成的物品和数量
      * @param generationRate 每次生成的数量
-     * @param interval       生成间隔（刻），也用作 ConfigItemGeneration 的第三个参数
+     * @param interval       生成间隔（刻）
      * @return 物品生成升级物品
      */
     private static Item createItemGenerator(ItemStack itemToGenerate, int generationRate, int interval) {
@@ -50,7 +50,7 @@ public class CustomUpgradeItem {
      *
      * @param fluidToGenerate 要生成的流体和数量
      * @param generationRate  每次生成的流体量（mB）
-     * @param interval        生成间隔（刻），也用作 ConfigFluidGeneration 的第三个参数
+     * @param interval        生成间隔（刻）
      * @return 流体生成升级物品
      */
     private static Item createFluidGenerator(FluidStack fluidToGenerate, int generationRate, int interval) {
@@ -101,7 +101,6 @@ public class CustomUpgradeItem {
             () -> createItemGenerator(new ItemStack(Items.OBSIDIAN, 64), 64, 5));
     public static final DeferredItem<Item> OBSIDIAN_GENERATOR_UPGRADE_5 = ITEMS.register("obsidian_generator_upgrade_5",
             () -> createItemGenerator(new ItemStack(Items.OBSIDIAN, 64), 64, 1));
-
     // 圆石生成升级
     public static final DeferredItem<Item> COBBLESTONE_GENERATOR_UPGRADE_1 = ITEMS.register("cobblestone_generator_upgrade_1",
             () -> createItemGenerator(new ItemStack(Items.COBBLESTONE, 8), 8, 20));
@@ -113,7 +112,17 @@ public class CustomUpgradeItem {
             () -> createItemGenerator(new ItemStack(Items.COBBLESTONE, 64), 64, 5));
     public static final DeferredItem<Item> COBBLESTONE_GENERATOR_UPGRADE_5 = ITEMS.register("cobblestone_generator_upgrade_5",
             () -> createItemGenerator(new ItemStack(Items.COBBLESTONE, 64), 64, 1));
-
+    // 沙砾生成升级
+    public static final DeferredItem<Item> GRAVEL_GENERATOR_UPGRADE_1 = ITEMS.register("gravel_generator_upgrade_1",
+            () -> createItemGenerator(new ItemStack(Items.GRAVEL, 8), 8, 20));
+    public static final DeferredItem<Item> GRAVEL_GENERATOR_UPGRADE_2 = ITEMS.register("gravel_generator_upgrade_2",
+            () -> createItemGenerator(new ItemStack(Items.GRAVEL, 16), 16, 15));
+    public static final DeferredItem<Item> GRAVEL_GENERATOR_UPGRADE_3 = ITEMS.register("gravel_generator_upgrade_3",
+            () -> createItemGenerator(new ItemStack(Items.GRAVEL, 32), 32, 10));
+    public static final DeferredItem<Item> GRAVEL_GENERATOR_UPGRADE_4 = ITEMS.register("gravel_generator_upgrade_4",
+            () -> createItemGenerator(new ItemStack(Items.GRAVEL, 64), 64, 5));
+    public static final DeferredItem<Item> GRAVEL_GENERATOR_UPGRADE_5 = ITEMS.register("gravel_generator_upgrade_5",
+            () -> createItemGenerator(new ItemStack(Items.GRAVEL, 64), 64, 1));
     // 泥土生成升级
     public static final DeferredItem<Item> DIRT_GENERATOR_UPGRADE_1 = ITEMS.register("dirt_generator_upgrade_1",
             () -> createItemGenerator(new ItemStack(Items.DIRT, 8), 8, 20));
@@ -125,7 +134,6 @@ public class CustomUpgradeItem {
             () -> createItemGenerator(new ItemStack(Items.DIRT, 64), 64, 5));
     public static final DeferredItem<Item> DIRT_GENERATOR_UPGRADE_5 = ITEMS.register("dirt_generator_upgrade_5",
             () -> createItemGenerator(new ItemStack(Items.DIRT, 64), 64, 1));
-
     // 沙子生成升级
     public static final DeferredItem<Item> SAND_GENERATOR_UPGRADE_1 = ITEMS.register("sand_generator_upgrade_1",
             () -> createItemGenerator(new ItemStack(Items.SAND, 8), 8, 20));
@@ -137,7 +145,6 @@ public class CustomUpgradeItem {
             () -> createItemGenerator(new ItemStack(Items.SAND, 64), 64, 5));
     public static final DeferredItem<Item> SAND_GENERATOR_UPGRADE_5 = ITEMS.register("sand_generator_upgrade_5",
             () -> createItemGenerator(new ItemStack(Items.SAND, 64), 64, 1));
-
     // 安山岩生成升级
     public static final DeferredItem<Item> ANDESITE_GENERATOR_UPGRADE_1 = ITEMS.register("andesite_generator_upgrade_1",
             () -> createItemGenerator(new ItemStack(Items.ANDESITE, 8), 8, 20));
@@ -149,7 +156,6 @@ public class CustomUpgradeItem {
             () -> createItemGenerator(new ItemStack(Items.ANDESITE, 64), 64, 5));
     public static final DeferredItem<Item> ANDESITE_GENERATOR_UPGRADE_5 = ITEMS.register("andesite_generator_upgrade_5",
             () -> createItemGenerator(new ItemStack(Items.ANDESITE, 64), 64, 1));
-
     // 闪长岩生成升级
     public static final DeferredItem<Item> DIORITE_GENERATOR_UPGRADE_1 = ITEMS.register("diorite_generator_upgrade_1",
             () -> createItemGenerator(new ItemStack(Items.DIORITE, 8), 8, 20));
@@ -161,7 +167,6 @@ public class CustomUpgradeItem {
             () -> createItemGenerator(new ItemStack(Items.DIORITE, 64), 64, 5));
     public static final DeferredItem<Item> DIORITE_GENERATOR_UPGRADE_5 = ITEMS.register("diorite_generator_upgrade_5",
             () -> createItemGenerator(new ItemStack(Items.DIORITE, 64), 64, 1));
-
     // 花岗岩生成升级
     public static final DeferredItem<Item> GRANITE_GENERATOR_UPGRADE_1 = ITEMS.register("granite_generator_upgrade_1",
             () -> createItemGenerator(new ItemStack(Items.GRANITE, 8), 8, 20));
@@ -173,7 +178,6 @@ public class CustomUpgradeItem {
             () -> createItemGenerator(new ItemStack(Items.GRANITE, 64), 64, 5));
     public static final DeferredItem<Item> GRANITE_GENERATOR_UPGRADE_5 = ITEMS.register("granite_generator_upgrade_5",
             () -> createItemGenerator(new ItemStack(Items.GRANITE, 64), 64, 1));
-
     // 深板岩圆石生成升级
     public static final DeferredItem<Item> COBBLED_DEEPSLATE_GENERATOR_UPGRADE_1 = ITEMS.register("cobbled_deepslate_generator_upgrade_1",
             () -> createItemGenerator(new ItemStack(Items.COBBLED_DEEPSLATE, 8), 8, 20));
@@ -185,7 +189,6 @@ public class CustomUpgradeItem {
             () -> createItemGenerator(new ItemStack(Items.COBBLED_DEEPSLATE, 64), 64, 5));
     public static final DeferredItem<Item> COBBLED_DEEPSLATE_GENERATOR_UPGRADE_5 = ITEMS.register("cobbled_deepslate_generator_upgrade_5",
             () -> createItemGenerator(new ItemStack(Items.COBBLED_DEEPSLATE, 64), 64, 1));
-
     // 黑石生成升级
     public static final DeferredItem<Item> BLACKSTONE_GENERATOR_UPGRADE_1 = ITEMS.register("blackstone_generator_upgrade_1",
             () -> createItemGenerator(new ItemStack(Items.BLACKSTONE, 8), 8, 20));
@@ -197,7 +200,6 @@ public class CustomUpgradeItem {
             () -> createItemGenerator(new ItemStack(Items.BLACKSTONE, 64), 64, 5));
     public static final DeferredItem<Item> BLACKSTONE_GENERATOR_UPGRADE_5 = ITEMS.register("blackstone_generator_upgrade_5",
             () -> createItemGenerator(new ItemStack(Items.BLACKSTONE, 64), 64, 1));
-
     // 下界岩生成升级
     public static final DeferredItem<Item> NETHERRACK_GENERATOR_UPGRADE_1 = ITEMS.register("netherrack_generator_upgrade_1",
             () -> createItemGenerator(new ItemStack(Items.NETHERRACK, 8), 8, 20));
@@ -209,7 +211,6 @@ public class CustomUpgradeItem {
             () -> createItemGenerator(new ItemStack(Items.NETHERRACK, 64), 64, 5));
     public static final DeferredItem<Item> NETHERRACK_GENERATOR_UPGRADE_5 = ITEMS.register("netherrack_generator_upgrade_5",
             () -> createItemGenerator(new ItemStack(Items.NETHERRACK, 64), 64, 1));
-
     // 末地石生成升级
     public static final DeferredItem<Item> END_STONE_GENERATOR_UPGRADE_1 = ITEMS.register("end_stone_generator_upgrade_1",
             () -> createItemGenerator(new ItemStack(Items.END_STONE, 8), 8, 20));
@@ -221,7 +222,6 @@ public class CustomUpgradeItem {
             () -> createItemGenerator(new ItemStack(Items.END_STONE, 64), 64, 5));
     public static final DeferredItem<Item> END_STONE_GENERATOR_UPGRADE_5 = ITEMS.register("end_stone_generator_upgrade_5",
             () -> createItemGenerator(new ItemStack(Items.END_STONE, 64), 64, 1));
-
     // 凝灰岩生成升级
     public static final DeferredItem<Item> TUFF_GENERATOR_UPGRADE_1 = ITEMS.register("tuff_generator_upgrade_1",
             () -> createItemGenerator(new ItemStack(Items.TUFF, 8), 8, 20));
@@ -233,7 +233,6 @@ public class CustomUpgradeItem {
             () -> createItemGenerator(new ItemStack(Items.TUFF, 64), 64, 5));
     public static final DeferredItem<Item> TUFF_GENERATOR_UPGRADE_5 = ITEMS.register("tuff_generator_upgrade_5",
             () -> createItemGenerator(new ItemStack(Items.TUFF, 64), 64, 1));
-
     // 玄武岩生成升级
     public static final DeferredItem<Item> BASALT_GENERATOR_UPGRADE_1 = ITEMS.register("basalt_generator_upgrade_1",
             () -> createItemGenerator(new ItemStack(Items.BASALT, 8), 8, 20));
@@ -245,7 +244,61 @@ public class CustomUpgradeItem {
             () -> createItemGenerator(new ItemStack(Items.BASALT, 64), 64, 5));
     public static final DeferredItem<Item> BASALT_GENERATOR_UPGRADE_5 = ITEMS.register("basalt_generator_upgrade_5",
             () -> createItemGenerator(new ItemStack(Items.BASALT, 64), 64, 1));
-
+    // 滴水石块生成升级
+    public static final DeferredItem<Item> DRIPSTONE_GENERATOR_UPGRADE_1 = ITEMS.register("dripstone_generator_upgrade_1",
+            () -> createItemGenerator(new ItemStack(Items.DRIPSTONE_BLOCK, 8), 8, 20));
+    public static final DeferredItem<Item> DRIPSTONE_GENERATOR_UPGRADE_2 = ITEMS.register("dripstone_generator_upgrade_2",
+            () -> createItemGenerator(new ItemStack(Items.DRIPSTONE_BLOCK, 16), 16, 15));
+    public static final DeferredItem<Item> DRIPSTONE_GENERATOR_UPGRADE_3 = ITEMS.register("dripstone_generator_upgrade_3",
+            () -> createItemGenerator(new ItemStack(Items.DRIPSTONE_BLOCK, 32), 32, 10));
+    public static final DeferredItem<Item> DRIPSTONE_GENERATOR_UPGRADE_4 = ITEMS.register("dripstone_generator_upgrade_4",
+            () -> createItemGenerator(new ItemStack(Items.DRIPSTONE_BLOCK, 64), 64, 5));
+    public static final DeferredItem<Item> DRIPSTONE_GENERATOR_UPGRADE_5 = ITEMS.register("dripstone_generator_upgrade_5",
+            () -> createItemGenerator(new ItemStack(Items.DRIPSTONE_BLOCK, 64), 64, 1));
+    // 海晶石生成升级
+    public static final DeferredItem<Item> PRISMARINE_GENERATOR_UPGRADE_1 = ITEMS.register("prismarine_generator_upgrade_1",
+            () -> createItemGenerator(new ItemStack(Items.PRISMARINE, 8), 8, 20));
+    public static final DeferredItem<Item> PRISMARINE_GENERATOR_UPGRADE_2 = ITEMS.register("prismarine_generator_upgrade_2",
+            () -> createItemGenerator(new ItemStack(Items.PRISMARINE, 16), 16, 15));
+    public static final DeferredItem<Item> PRISMARINE_GENERATOR_UPGRADE_3 = ITEMS.register("prismarine_generator_upgrade_3",
+            () -> createItemGenerator(new ItemStack(Items.PRISMARINE, 32), 32, 10));
+    public static final DeferredItem<Item> PRISMARINE_GENERATOR_UPGRADE_4 = ITEMS.register("prismarine_generator_upgrade_4",
+            () -> createItemGenerator(new ItemStack(Items.PRISMARINE, 64), 64, 5));
+    public static final DeferredItem<Item> PRISMARINE_GENERATOR_UPGRADE_5 = ITEMS.register("prismarine_generator_upgrade_5",
+            () -> createItemGenerator(new ItemStack(Items.PRISMARINE, 64), 64, 1));
+    // 灵魂沙生成升级
+    public static final DeferredItem<Item> SOUL_SAND_GENERATOR_UPGRADE_1 = ITEMS.register("soul_sand_generator_upgrade_1",
+            () -> createItemGenerator(new ItemStack(Items.SOUL_SAND, 8), 8, 20));
+    public static final DeferredItem<Item> SOUL_SAND_GENERATOR_UPGRADE_2 = ITEMS.register("soul_sand_generator_upgrade_2",
+            () -> createItemGenerator(new ItemStack(Items.SOUL_SAND, 16), 16, 15));
+    public static final DeferredItem<Item> SOUL_SAND_GENERATOR_UPGRADE_3 = ITEMS.register("soul_sand_generator_upgrade_3",
+            () -> createItemGenerator(new ItemStack(Items.SOUL_SAND, 32), 32, 10));
+    public static final DeferredItem<Item> SOUL_SAND_GENERATOR_UPGRADE_4 = ITEMS.register("soul_sand_generator_upgrade_4",
+            () -> createItemGenerator(new ItemStack(Items.SOUL_SAND, 64), 64, 5));
+    public static final DeferredItem<Item> SOUL_SAND_GENERATOR_UPGRADE_5 = ITEMS.register("soul_sand_generator_upgrade_5",
+            () -> createItemGenerator(new ItemStack(Items.SOUL_SAND, 64), 64, 1));
+    // 幽匿块生成升级
+    public static final DeferredItem<Item> SCULK_GENERATOR_UPGRADE_1 = ITEMS.register("sculk_generator_upgrade_1",
+            () -> createItemGenerator(new ItemStack(Items.SCULK, 8), 8, 20));
+    public static final DeferredItem<Item> SCULK_GENERATOR_UPGRADE_2 = ITEMS.register("sculk_generator_upgrade_2",
+            () -> createItemGenerator(new ItemStack(Items.SCULK, 16), 16, 15));
+    public static final DeferredItem<Item> SCULK_GENERATOR_UPGRADE_3 = ITEMS.register("sculk_generator_upgrade_3",
+            () -> createItemGenerator(new ItemStack(Items.SCULK, 32), 32, 10));
+    public static final DeferredItem<Item> SCULK_GENERATOR_UPGRADE_4 = ITEMS.register("sculk_generator_upgrade_4",
+            () -> createItemGenerator(new ItemStack(Items.SCULK, 64), 64, 5));
+    public static final DeferredItem<Item> SCULK_GENERATOR_UPGRADE_5 = ITEMS.register("sculk_generator_upgrade_5",
+            () -> createItemGenerator(new ItemStack(Items.SCULK, 64), 64, 1));
+    // 黏土块生成升级
+    public static final DeferredItem<Item> CLAY_GENERATOR_UPGRADE_1 = ITEMS.register("clay_generator_upgrade_1",
+            () -> createItemGenerator(new ItemStack(Items.CLAY, 8), 8, 20));
+    public static final DeferredItem<Item> CLAY_GENERATOR_UPGRADE_2 = ITEMS.register("clay_generator_upgrade_2",
+            () -> createItemGenerator(new ItemStack(Items.CLAY, 16), 16, 15));
+    public static final DeferredItem<Item> CLAY_GENERATOR_UPGRADE_3 = ITEMS.register("clay_generator_upgrade_3",
+            () -> createItemGenerator(new ItemStack(Items.CLAY, 32), 32, 10));
+    public static final DeferredItem<Item> CLAY_GENERATOR_UPGRADE_4 = ITEMS.register("clay_generator_upgrade_4",
+            () -> createItemGenerator(new ItemStack(Items.CLAY, 64), 64, 5));
+    public static final DeferredItem<Item> CLAY_GENERATOR_UPGRADE_5 = ITEMS.register("clay_generator_upgrade_5",
+            () -> createItemGenerator(new ItemStack(Items.CLAY, 64), 64, 1));
 
     // ==================== 流体功能升级 ====================
 
@@ -260,7 +313,6 @@ public class CustomUpgradeItem {
             () -> createFluidGenerator(new FluidStack(Fluids.WATER, 1024000), 1024000, 5));
     public static final DeferredItem<Item> WATER_GENERATOR_UPGRADE_5 = ITEMS.register("water_generator_upgrade_5",
             () -> createFluidGenerator(new FluidStack(Fluids.WATER, 2048000), 2048000, 1));
-
     // 岩浆生成升级
     public static final DeferredItem<Item> LAVA_GENERATOR_UPGRADE_1 = ITEMS.register("lava_generator_upgrade_1",
             () -> createFluidGenerator(new FluidStack(Fluids.LAVA, 50), 50, 20));
@@ -272,7 +324,6 @@ public class CustomUpgradeItem {
             () -> createFluidGenerator(new FluidStack(Fluids.LAVA, 2500), 2500, 5));
     public static final DeferredItem<Item> LAVA_GENERATOR_UPGRADE_5 = ITEMS.register("lava_generator_upgrade_5",
             () -> createFluidGenerator(new FluidStack(Fluids.LAVA, 5000), 5000, 1));
-
     // 牛奶生成升级
     public static final DeferredItem<Item> MILK_GENERATOR_UPGRADE_1 = ITEMS.register("milk_generator_upgrade_1",
             () -> createFluidGenerator(getFluid("minecraft:milk", 50), 50, 20));

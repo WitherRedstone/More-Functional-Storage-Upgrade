@@ -83,18 +83,20 @@ configurations {
 }
 
 dependencies {
-    // 钛
+    // 前置
     implementation "curse.maven:titanium-287342:8760562"
-    // 功能性存储
     implementation "curse.maven:functional-storage-556861:8459097"
 
-    // jei
-    localRuntime "curse.maven:jei-238222:7420587"
-    // 兼容 - 机械动力
-    implementation "curse.maven:create-328085:7178775"
+    // 联动
+    localRuntime "curse.maven:create-328085:7178775" // 机械动力
+    localRuntime "curse.maven:forbidden-arcanus-309858:6875895" // 禁忌与奥秘
+    localRuntime "curse.maven:valhelsia-core-416935:6296775" // 禁忌与奥秘前置
 
-    // 钠
-    //implementation "curse.maven:sodium-394468:6382651"
+    // 辅助
+    localRuntime "curse.maven:jei-238222:7420587"
+
+    // 测试
+    //implementation "curse.maven:sodium-394468:6382651" // 钠
 }
 
 var generateModMetadata = tasks.register("generateModMetadata", ProcessResources) {

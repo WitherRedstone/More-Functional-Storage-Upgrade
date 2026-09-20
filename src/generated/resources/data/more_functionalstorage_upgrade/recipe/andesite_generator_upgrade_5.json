@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:smithing_transform",
+  "addition": {
+    "item": "minecraft:heart_of_the_sea"
+  },
+  "base": {
+    "item": "more_functionalstorage_upgrade:andesite_generator_upgrade_4"
+  },
+  "result": {
+    "count": 1,
+    "id": "more_functionalstorage_upgrade:andesite_generator_upgrade_5"
+  },
+  "template": {
+    "item": "more_functionalstorage_upgrade:generator_upgrade_smithing_template"
+  }
+}

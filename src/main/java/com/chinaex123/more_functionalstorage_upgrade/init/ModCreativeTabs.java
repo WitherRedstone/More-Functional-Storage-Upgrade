@@ -2,6 +2,7 @@ package com.chinaex123.more_functionalstorage_upgrade.init;
 
 import com.chinaex123.more_functionalstorage_upgrade.MoreFunctionalStorageUpgrade;
 import com.chinaex123.more_functionalstorage_upgrade.init.integrations.CreateUpgradeItem;
+import com.chinaex123.more_functionalstorage_upgrade.init.integrations.ForbiddenArcanusUpgradeItem;
 import net.minecraft.core.NonNullList;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.network.chat.Component;
@@ -21,9 +22,12 @@ public class ModCreativeTabs {
 
     /** 第一个按钮：基础升级 */
     public static final NonNullList<ItemStack> BASE_ITEMS = NonNullList.create();
-
     /** 第二个按钮：其他模组兼容升级 */
     public static final NonNullList<ItemStack> INTEGRATION_ITEMS = NonNullList.create();
+
+    // ==================== 兼容模组 ID ====================
+    private static final String MOD_CREATE = "create";
+    private static final String MOD_FORBIDDEN_ARCANUS = "forbidden_arcanus";
 
     public static final Supplier<CreativeModeTab> MORE_FUNCTIONALSTORAGE_UPGRADE_TAB =
             CREATIVE_MODE_TAB.register("more_functionalstorage_upgrade_tab", () -> CreativeModeTab.builder()
@@ -33,7 +37,7 @@ public class ModCreativeTabs {
                         BASE_ITEMS.clear();
                         INTEGRATION_ITEMS.clear();
                         addBaseItems(output);
-                        addCreateIntegrationItems(output);
+                        addIntegrationItems(output);
                     })
                     .build());
 
@@ -59,6 +63,12 @@ public class ModCreativeTabs {
         accept(output, BASE_ITEMS, CustomUpgradeItem.COBBLESTONE_GENERATOR_UPGRADE_3.get());
         accept(output, BASE_ITEMS, CustomUpgradeItem.COBBLESTONE_GENERATOR_UPGRADE_4.get());
         accept(output, BASE_ITEMS, CustomUpgradeItem.COBBLESTONE_GENERATOR_UPGRADE_5.get());
+        // 沙砾生成升级
+        accept(output, BASE_ITEMS, CustomUpgradeItem.GRAVEL_GENERATOR_UPGRADE_1.get());
+        accept(output, BASE_ITEMS, CustomUpgradeItem.GRAVEL_GENERATOR_UPGRADE_2.get());
+        accept(output, BASE_ITEMS, CustomUpgradeItem.GRAVEL_GENERATOR_UPGRADE_3.get());
+        accept(output, BASE_ITEMS, CustomUpgradeItem.GRAVEL_GENERATOR_UPGRADE_4.get());
+        accept(output, BASE_ITEMS, CustomUpgradeItem.GRAVEL_GENERATOR_UPGRADE_5.get());
         // 泥土生成升级
         accept(output, BASE_ITEMS, CustomUpgradeItem.DIRT_GENERATOR_UPGRADE_1.get());
         accept(output, BASE_ITEMS, CustomUpgradeItem.DIRT_GENERATOR_UPGRADE_2.get());
@@ -125,6 +135,36 @@ public class ModCreativeTabs {
         accept(output, BASE_ITEMS, CustomUpgradeItem.BASALT_GENERATOR_UPGRADE_3.get());
         accept(output, BASE_ITEMS, CustomUpgradeItem.BASALT_GENERATOR_UPGRADE_4.get());
         accept(output, BASE_ITEMS, CustomUpgradeItem.BASALT_GENERATOR_UPGRADE_5.get());
+        // 滴水石块生成升级
+        accept(output, BASE_ITEMS, CustomUpgradeItem.DRIPSTONE_GENERATOR_UPGRADE_1.get());
+        accept(output, BASE_ITEMS, CustomUpgradeItem.DRIPSTONE_GENERATOR_UPGRADE_2.get());
+        accept(output, BASE_ITEMS, CustomUpgradeItem.DRIPSTONE_GENERATOR_UPGRADE_3.get());
+        accept(output, BASE_ITEMS, CustomUpgradeItem.DRIPSTONE_GENERATOR_UPGRADE_4.get());
+        accept(output, BASE_ITEMS, CustomUpgradeItem.DRIPSTONE_GENERATOR_UPGRADE_5.get());
+        // 海晶石生成升级
+        accept(output, BASE_ITEMS, CustomUpgradeItem.PRISMARINE_GENERATOR_UPGRADE_1.get());
+        accept(output, BASE_ITEMS, CustomUpgradeItem.PRISMARINE_GENERATOR_UPGRADE_2.get());
+        accept(output, BASE_ITEMS, CustomUpgradeItem.PRISMARINE_GENERATOR_UPGRADE_3.get());
+        accept(output, BASE_ITEMS, CustomUpgradeItem.PRISMARINE_GENERATOR_UPGRADE_4.get());
+        accept(output, BASE_ITEMS, CustomUpgradeItem.PRISMARINE_GENERATOR_UPGRADE_5.get());
+        // 灵魂沙生成升级
+        accept(output, BASE_ITEMS, CustomUpgradeItem.SOUL_SAND_GENERATOR_UPGRADE_1.get());
+        accept(output, BASE_ITEMS, CustomUpgradeItem.SOUL_SAND_GENERATOR_UPGRADE_2.get());
+        accept(output, BASE_ITEMS, CustomUpgradeItem.SOUL_SAND_GENERATOR_UPGRADE_3.get());
+        accept(output, BASE_ITEMS, CustomUpgradeItem.SOUL_SAND_GENERATOR_UPGRADE_4.get());
+        accept(output, BASE_ITEMS, CustomUpgradeItem.SOUL_SAND_GENERATOR_UPGRADE_5.get());
+        // 幽匿块生成升级
+        accept(output, BASE_ITEMS, CustomUpgradeItem.SCULK_GENERATOR_UPGRADE_1.get());
+        accept(output, BASE_ITEMS, CustomUpgradeItem.SCULK_GENERATOR_UPGRADE_2.get());
+        accept(output, BASE_ITEMS, CustomUpgradeItem.SCULK_GENERATOR_UPGRADE_3.get());
+        accept(output, BASE_ITEMS, CustomUpgradeItem.SCULK_GENERATOR_UPGRADE_4.get());
+        accept(output, BASE_ITEMS, CustomUpgradeItem.SCULK_GENERATOR_UPGRADE_5.get());
+        // 黏土块生成升级
+        accept(output, BASE_ITEMS, CustomUpgradeItem.CLAY_GENERATOR_UPGRADE_1.get());
+        accept(output, BASE_ITEMS, CustomUpgradeItem.CLAY_GENERATOR_UPGRADE_2.get());
+        accept(output, BASE_ITEMS, CustomUpgradeItem.CLAY_GENERATOR_UPGRADE_3.get());
+        accept(output, BASE_ITEMS, CustomUpgradeItem.CLAY_GENERATOR_UPGRADE_4.get());
+        accept(output, BASE_ITEMS, CustomUpgradeItem.CLAY_GENERATOR_UPGRADE_5.get());
 
         // ==================== 流体功能升级 ====================
         // 水生成升级
@@ -147,9 +187,26 @@ public class ModCreativeTabs {
         accept(output, BASE_ITEMS, CustomUpgradeItem.MILK_GENERATOR_UPGRADE_5.get());
     }
 
-    // ==================== 机械动力兼容升级（第二个按钮） ====================
-    private static void addCreateIntegrationItems(CreativeModeTab.Output output) {
-        if (!ModList.get().isLoaded("create")) {
+    // ==================== 兼容升级（第二个按钮） ====================
+
+    /**
+     * 调度所有模组的兼容物品。
+     * <p>
+     * 每个模组一个私有方法，各自判断是否加载。
+     * 以后加新模组，在这里加一行调用即可。
+     */
+    private static void addIntegrationItems(CreativeModeTab.Output output) {
+        addCreateItems(output);
+        addforbiddenArcanusItems(output);
+    }
+
+    /**
+     * 机械动力兼容物品。
+     * <p>
+     * 仅在 Create 加载时添加。
+     */
+    private static void addCreateItems(CreativeModeTab.Output output) {
+        if (!ModList.get().isLoaded(MOD_CREATE)) {
             return;
         }
 
@@ -183,6 +240,12 @@ public class ModCreativeTabs {
         accept(output, INTEGRATION_ITEMS, CreateUpgradeItem.LIMESTONE_GENERATOR_UPGRADE_3.get());
         accept(output, INTEGRATION_ITEMS, CreateUpgradeItem.LIMESTONE_GENERATOR_UPGRADE_4.get());
         accept(output, INTEGRATION_ITEMS, CreateUpgradeItem.LIMESTONE_GENERATOR_UPGRADE_5.get());
+        // 熔渣生成升级
+        accept(output, INTEGRATION_ITEMS, CreateUpgradeItem.SCORIA_GENERATOR_UPGRADE_1.get());
+        accept(output, INTEGRATION_ITEMS, CreateUpgradeItem.SCORIA_GENERATOR_UPGRADE_2.get());
+        accept(output, INTEGRATION_ITEMS, CreateUpgradeItem.SCORIA_GENERATOR_UPGRADE_3.get());
+        accept(output, INTEGRATION_ITEMS, CreateUpgradeItem.SCORIA_GENERATOR_UPGRADE_4.get());
+        accept(output, INTEGRATION_ITEMS, CreateUpgradeItem.SCORIA_GENERATOR_UPGRADE_5.get());
         // 蜂蜜生成升级
         accept(output, INTEGRATION_ITEMS, CreateUpgradeItem.HONEY_GENERATOR_UPGRADE_1.get());
         accept(output, INTEGRATION_ITEMS, CreateUpgradeItem.HONEY_GENERATOR_UPGRADE_2.get());
@@ -190,6 +253,24 @@ public class ModCreativeTabs {
         accept(output, INTEGRATION_ITEMS, CreateUpgradeItem.HONEY_GENERATOR_UPGRADE_4.get());
         accept(output, INTEGRATION_ITEMS, CreateUpgradeItem.HONEY_GENERATOR_UPGRADE_5.get());
     }
+
+    /**
+     * 禁忌与奥秘兼容物品。
+     * <p>
+     * 仅在 禁忌与奥秘 加载时添加。
+     */
+     private static void addforbiddenArcanusItems(CreativeModeTab.Output output) {
+         if (!ModList.get().isLoaded(MOD_FORBIDDEN_ARCANUS)) {
+             return;
+         }
+
+         // 暗黑石生成升级
+         accept(output, INTEGRATION_ITEMS, ForbiddenArcanusUpgradeItem.DARKSTONE_GENERATOR_UPGRADE_1.get());
+         accept(output, INTEGRATION_ITEMS, ForbiddenArcanusUpgradeItem.DARKSTONE_GENERATOR_UPGRADE_2.get());
+         accept(output, INTEGRATION_ITEMS, ForbiddenArcanusUpgradeItem.DARKSTONE_GENERATOR_UPGRADE_3.get());
+         accept(output, INTEGRATION_ITEMS, ForbiddenArcanusUpgradeItem.DARKSTONE_GENERATOR_UPGRADE_4.get());
+         accept(output, INTEGRATION_ITEMS, ForbiddenArcanusUpgradeItem.DARKSTONE_GENERATOR_UPGRADE_5.get());
+     }
 
     /** 把物品输出到标签页，同时缓存到指定分类列表 */
     private static void accept(CreativeModeTab.Output output, NonNullList<ItemStack> categoryItems, ItemLike item) {
@@ -204,7 +285,6 @@ public class ModCreativeTabs {
         categoryItems.add(stack.copy());
     }
 
-    // 注册到NeoForge事件总线里
     public static void register(IEventBus eventBus) {
         CREATIVE_MODE_TAB.register(eventBus);
     }

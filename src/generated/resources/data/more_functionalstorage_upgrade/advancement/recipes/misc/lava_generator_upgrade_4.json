@@ -1,0 +1,32 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_lava_generator_upgrade_3": {
+      "conditions": {
+        "items": [
+          {
+            "items": "more_functionalstorage_upgrade:lava_generator_upgrade_3"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "more_functionalstorage_upgrade:lava_generator_upgrade_4"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_the_recipe",
+      "has_lava_generator_upgrade_3"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "more_functionalstorage_upgrade:lava_generator_upgrade_4"
+    ]
+  }
+}
