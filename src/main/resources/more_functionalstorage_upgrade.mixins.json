@@ -1,0 +1,14 @@
+{
+  "required": true,
+  "package": "com.chinaex123.more_functionalstorage_upgrade.mixins",
+  "compatibilityLevel": "JAVA_21",
+  "mixins": [
+    "accessor.CreativeModeInventoryScreenAccessor"
+  ],
+  "injectors": {
+    "defaultRequire": 1
+  },
+  "overwrites": {
+    "requireAnnotations": true
+  }
+}
