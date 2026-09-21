@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "A": "#functionalstorage:drawer",
+    "B": "#c:ingots/iron",
+    "C": "minecraft:water_bucket",
+    "D": "minecraft:lava_bucket",
+    "E": "#c:storage_blocks/iron"
+  },
+  "pattern": [
+    "BEB",
+    "CAD",
+    "BEB"
+  ],
+  "result": {
+    "id": "more_functionalstorage_upgrade:cobblestone_generator_upgrade_1"
+  }
+}

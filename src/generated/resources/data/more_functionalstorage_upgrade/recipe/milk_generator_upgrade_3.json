@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "A": "more_functionalstorage_upgrade:milk_generator_upgrade_2",
+    "B": "#c:gems/diamond",
+    "C": "#c:storage_blocks/diamond"
+  },
+  "pattern": [
+    "BCB",
+    "BAB",
+    "BCB"
+  ],
+  "result": {
+    "id": "more_functionalstorage_upgrade:milk_generator_upgrade_3"
+  }
+}

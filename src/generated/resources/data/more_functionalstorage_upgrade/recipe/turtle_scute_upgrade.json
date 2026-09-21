@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "A": "functionalstorage:netherite_upgrade",
+    "B": "#c:chests",
+    "C": "minecraft:turtle_scute",
+    "D": "#c:storage_blocks/diamond"
+  },
+  "pattern": [
+    "CDC",
+    "BAB",
+    "CDC"
+  ],
+  "result": {
+    "id": "more_functionalstorage_upgrade:turtle_scute_upgrade"
+  }
+}

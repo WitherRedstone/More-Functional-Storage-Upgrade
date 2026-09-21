@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "A": "#functionalstorage:drawer",
+    "B": "#c:ingots/iron",
+    "C": "minecraft:pointed_dripstone",
+    "D": "#c:storage_blocks/iron"
+  },
+  "pattern": [
+    "BDB",
+    "CAC",
+    "BDB"
+  ],
+  "result": {
+    "id": "more_functionalstorage_upgrade:dripstone_generator_upgrade_1"
+  }
+}

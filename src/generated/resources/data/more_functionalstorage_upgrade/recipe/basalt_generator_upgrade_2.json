@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "A": "more_functionalstorage_upgrade:basalt_generator_upgrade_1",
+    "B": "#c:ingots/gold",
+    "C": "#c:storage_blocks/gold"
+  },
+  "pattern": [
+    "BCB",
+    "BAB",
+    "BCB"
+  ],
+  "result": {
+    "id": "more_functionalstorage_upgrade:basalt_generator_upgrade_2"
+  }
+}

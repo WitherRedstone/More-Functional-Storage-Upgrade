@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "A": "functionalstorage:dripping_upgrade",
+    "B": "#c:ingots/iron",
+    "C": "#c:storage_blocks/iron"
+  },
+  "pattern": [
+    "BCB",
+    "BAB",
+    "BCB"
+  ],
+  "result": {
+    "id": "more_functionalstorage_upgrade:lava_generator_upgrade_1"
+  }
+}

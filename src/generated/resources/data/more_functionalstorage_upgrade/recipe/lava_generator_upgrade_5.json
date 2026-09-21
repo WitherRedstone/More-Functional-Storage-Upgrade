@@ -1,0 +1,9 @@
+{
+  "type": "minecraft:smithing_transform",
+  "addition": "minecraft:heart_of_the_sea",
+  "base": "more_functionalstorage_upgrade:lava_generator_upgrade_4",
+  "result": {
+    "id": "more_functionalstorage_upgrade:lava_generator_upgrade_5"
+  },
+  "template": "more_functionalstorage_upgrade:generator_upgrade_smithing_template"
+}

@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "A": "minecraft:netherite_upgrade_smithing_template",
+    "B": "minecraft:heart_of_the_sea",
+    "C": "#c:gems/amethyst",
+    "D": "#c:storage_blocks/diamond"
+  },
+  "pattern": [
+    "CDC",
+    "BAB",
+    "CDC"
+  ],
+  "result": {
+    "id": "more_functionalstorage_upgrade:generator_upgrade_smithing_template"
+  }
+}
